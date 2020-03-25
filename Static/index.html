@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Hello Python!</title>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- import the webpage's stylesheet -->
+    <link href="styles.css" rel="stylesheet" type="text/css">
+  </head>
+  <body>
+    <h1>Hello User</h1>
+    <p>
+      Please submit a color of your choosing:
+    </p>
+    <form action="cgi-bin/color_answer.py" method="POST">
+      <label for="name">Your color:</label>
+      <input type="text" name="color" id="color" requiered>
+      <input type="submit" value="Submit">
+    </form>
+  </body>
+</html>
