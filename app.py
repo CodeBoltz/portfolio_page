@@ -9,9 +9,7 @@ CORS(app, resources={r"/api/*": {"origins": "http://127.0.0.1"}})
 # this serves a static html file. 
 @app.route('/')
 def index():
-    return send_file("static/index.html")
-
-
+    return send_file("index.html")
 
 
 # Run this application if the file is executed, e.g. as "python3 backend.py" 
