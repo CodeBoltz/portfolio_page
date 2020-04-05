@@ -1,13 +1,13 @@
 body{
-  margin: 0;
-  background: #2222;
+  margin: 60;
+  background: #ffff;
   font-family: 'Work Sans', sans-serif;
   font-weight: 300;
 }
 
 .container {
-  width: 80%;
   margin: 0 auto;
+
 }
 
 header{
@@ -16,6 +16,12 @@ header{
 
 .logo {
   float: left;
+  position: absolute;
+  width: 436px;
+  height: 106px;
+  left: 60px;
+  top: 22px;
+
 }
 
 nav {
