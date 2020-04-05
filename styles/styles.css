@@ -1,0 +1,40 @@
+/* CSS Document */
+
+ @font-face {
+  font-family: "league_spartanbold";
+  src: url("../fonts/leaguespartan-bold-webfont.woff") format("woff");
+}
+
+@font-face {
+  font-family: "work_sansmedium";
+  src: url("../fonts/worksans-medium-webfont.woff") format("woff");
+}
+
+@font-face {
+  font-family: "work_sansregular";
+  src: url("../fonts/worksans-regular-webfont.woff") format("woff");
+}
+
+#logo {
+  position: absolute;
+  width: 436px;
+  height: 106px;
+  left: 60px;
+  top: 22px;
+}
+
+#home{
+  position: absolute;
+width: 82px;
+height: 35px;
+left: 883px;
+top: 73px;
+
+font-family: League Spartan;
+font-style: normal;
+font-weight: bold;
+font-size: 28px;
+line-height: 35px;
+/* identical to box height */
+color: #282828;
+}
