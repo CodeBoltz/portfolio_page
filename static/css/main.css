@@ -11,7 +11,7 @@
 
 body {
 	margin: 0;
-	background: #222;
+	background: #ffffff;
 	font-family: 'Work Sans', sans-serif;
 	font-weight: 400;
 }
@@ -123,6 +123,10 @@ nav a:hover {
 
   .logo {
     grid-column: 0 /1 ;
+    background:url("../images/logo.png") no-repeat center center;
+    width: 305.2px;
+    height: 74,2px;
+    margin: 60px; 
   }
 
   nav {
