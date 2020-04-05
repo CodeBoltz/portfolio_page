@@ -2,16 +2,15 @@
 <html>
 <head>
   <title>Gregor Boltz portfolio</title>
-  <link href="https://fonts.googleapis.com/css?family=Work+Sans:300">
   <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
   <!-- <meta charset="UTF-8"> -->
 </head>
-
   <body>
 
     <header>
-        {% block content %}
-        <img src="static/images/Logo.png" alt="logo"  class="logo">
+        <!--{% block content %}-->
+        <img src="/static/images/logo.png" alt="logo" class="logo" id="logo">
+        <input type="checkbox" id="nav-toggle" class="nav-toggle">
         <nav>
           <ul>
             <li><a href="#">home</a></li>
@@ -20,7 +19,10 @@
             <li><a href="#">contact</a></li>
           </ul>
         </nav>
-        {% endblock %}
+        <label for="nav-toggle" class="nav-toggle-label">
+          <span></span>
+        </label>  
+      <!--{% endblock %}-->
     </header>
   </body>
 </html>

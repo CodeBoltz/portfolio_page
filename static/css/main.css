@@ -1,29 +1,168 @@
-body{
-  margin: 60;
-  background: #ffff;
-  font-family: 'Work Sans', sans-serif;
-  font-weight: 300;
+@font-face {
+  font-family: "league_spartanbold";
+  src: url("../fonts/leaguespartan-bold-webfont.woff") format("woff");
+} 
+
+@import url("https://fonts.googleapis.com/css?family=Work+Sans:300");
+
+*, *::before, *::after {
+  box-sizing: border-box;
 }
 
-.container {
-  margin: 0 auto;
-
+body {
+	margin: 0;
+	background: #222;
+	font-family: 'Work Sans', sans-serif;
+	font-weight: 400;
 }
 
 header{
-  background: #55d6aa;
+  background: #ffffff;
+  text-align: center;
+  position: fixed;
+  z-index: 999;
+  width: 100%;
 }
 
-.logo {
-  float: left;
-  position: absolute;
-  width: 436px;
-  height: 106px;
-  left: 60px;
-  top: 22px;
+.nav-toggle {
+  display: none;
+}
 
+.nav-toggle-label{
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin-left: 1em;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.nav-toggle-label span,
+.nav-toggle-label span::before,
+.nav-toggle-label span::after {
+  display: block;
+  background: #282828;
+  height: 2px;
+  width: 2em;
+  border-radius: 2px;
+  position: relative;
+}
+
+.nav-toggle-label span::before,
+.nav-toggle-label span::after {
+  content: '';
+  position: absolute;
+}
+
+.nav-toggle-label span::before{
+  bottom: 7px;
+}
+
+.nav-toggle-label span::after{
+  top: 7px;
 }
 
 nav {
-  float: right;
+  position: absolute;
+  text-align: left;
+  font-family: League Spartan;
+  font-style: normal;
+  font-weight: bold;
+  top: 100;
+  left: 0;
+  background: #ffffff;
+  width: 100%;
+  transform: scale(1,0);
+  transform-origin: top;  
+  transition: transform 400ms ease-in-out;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+nav li{
+  margin-bottom: 1em;
+  margin-left: 1em;
+}
+
+nav a{
+  color: #5F5F5F;
+  text-decoration: none;
+  font-size: 1.2rem;
+  text-transform: lowercase;
+  opacity: 0;
+  transition: opacity 150ms ease-in-out;
+}
+
+nav a:hover {
+  color: #282828;
+}
+
+.nav-toggle:checked ~ nav {
+  transform: scale(1,1);
+}
+
+.nav-toggle:checked ~ nav a {
+  opacity: 1;
+  transition: opacity 250ms ease-in-out 250ms;
+}
+
+@media screen and (min-width: 800px){
+  .nav-toggle-label{
+    display: none;
+  }
+  
+  header{
+    display: grid;
+    grid-template-columns: 1fr auto minmax(600px, 1fr) 1fr;
+  }
+
+  .logo {
+    grid-column: 0 /1 ;
+  }
+
+  nav {
+    all: unset;
+    grid-column: 3 / 4;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+
+  nav ul{
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  nav li {
+    margin-left: 3em;
+    margin-bottom: 0;
+  }
+  nav a{
+    opacity: 1;
+    position: relative;
+    font-family: League Spartan;
+  }
+
+  nav a::before {
+    content: "";
+    display: block;
+    height: .15em;
+    background: #282828;
+    position: absolute;
+    top: auto;
+    left: 0;
+    right: 0;
+    bottom: -.5em;
+    transform: scale(0, 1);
+    transition: transform ease-in-out 250ms;
+  }
+
+  nav a:hover::before {
+    transform: scale(1,1);
+  }
 }
