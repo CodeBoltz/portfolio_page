@@ -3,7 +3,15 @@
   src: url("../fonts/leaguespartan-bold-webfont.woff") format("woff");
 } 
 
-@import url("https://fonts.googleapis.com/css?family=Work+Sans:300");
+@font-face {
+  font-family: "work_sansmedium";
+  src: url("../fonts/worksans-medium-webfont.woff") format("woff");
+}
+  
+@font-face {
+  font-family: "work_sansregular";
+  src: url("../fonts/worksans-regular-webfont.woff") format("woff");
+}
 
 *, *::before, *::after {
   box-sizing: border-box;
@@ -123,10 +131,8 @@ nav a:hover {
 
   .logo {
     position: absolute;
-    left: -40px;
+    left: -30px;
     top: -40px;
-    background:url("../images/logo.jpg");
-    background-color: transparent;
     z-index: 999;
     width: 305.2px;
     height: 74,2px;
@@ -184,22 +190,21 @@ nav a:hover {
   }
 }
 
-.box {
-  position: absolute;
+.side_box {
   background: rgba(234, 234, 234, 0.7);
   position: absolute;
   width: 561px;
   height: 1080px;
   left: 0px;
   top: 0px;
-  }
+}
 
-  .slogan {
+.slogan {
   position: absolute;
   width: 700px;
   height: 240px;
-  left: 20px;
-  top: 387px;
+  left: 24px;
+  top: 367px;
   font-family: League Spartan;
   font-style: normal;
   font-weight: bold;
@@ -213,9 +218,9 @@ nav a:hover {
   position: absolute;
   width: 660px;
   height: 0px;
-  left: 20px;
-  top: 473px;
-  border: 10px solid #99C5C4;
+  left: 30px;
+  top: 453px;
+  border: 6px solid #99C5C4;
 }
 
 .line2 {
@@ -223,9 +228,23 @@ nav a:hover {
   position: absolute;
   width: 720px;
   height: 0px;
-  left: 20px;
-  top: 593px;
-  border: 10px solid #99C5C4;
+  left: 30px;
+  top: 573px;
+  border: 6px solid #99C5C4;
+}
+
+.subline {
+  position: absolute;
+  width: 695px;
+  height: 189px;
+  left: 30px;
+  top: 621px;
+  font-family: Work Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 48px;
+  line-height: 56px;
+  color: #282828;
 }
 
 .showcase {
@@ -233,6 +252,269 @@ nav a:hover {
   width: 535.2px;
   height: 744.8px;   
   left: 1075px;
-  top: 150px;
-  background: url("../images/Ping_1.jpg");
+  top: 170px;
+}
+
+.ping_2 {
+  position: absolute;
+  width: 1257px;
+  height: 1080px;
+  left: 626px;
+  top: 1082px;
+}
+
+.headline {
+  position: absolute;
+  width: 328px;
+  height: 45px;
+  left: 106px;
+  top: 1133px;
+  font-family: League Spartan;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 45px;
+  color: #5F5F5F;
+}
+
+.line3 {
+  position: absolute;
+  width: 43px;
+  height: 0px;
+  left: 33px;
+  top: 1152.5px;
+  border: 3px solid #5F5F5F;
+}
+
+.ping {
+  position: absolute;
+  width: 162px;
+  height: 82px;
+  left: 30px;
+  top: 1251px;
+  font-family: League Spartan;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 70px;
+  line-height: 87px;
+  color: #282828;
+}
+
+.recent_work_description {
+  position: absolute;
+  width: 531px;
+  height: 237px;
+  left: 30px;
+  top: 1371px;
+  font-family: Work Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 28px;
+  color: #282828;
+  text-align: justify;
+}
+
+.headline2 {
+  position: absolute;
+  width: 328px;
+  height: 45px;
+  left: 106px;
+  top: 2213px;
+  font-family: League Spartan;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 45px;
+  color: #5F5F5F;
+}
+
+.line4 {
+  position: absolute;
+  width: 43px;
+  height: 0px;
+  left: 33px;
+  top: 2235.5px;
+  border: 3px solid #5F5F5F;
+}
+
+.work {
+  position: absolute;
+  width: 1012px;
+  height: 82px;
+  left: 30px;
+  top: 2331px;
+  font-family: League Spartan;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 70px;
+  line-height: 87px;
+  color: #282828;
+}
+
+.box2 {
+  position: absolute;
+  width: 574px;
+  height: 264px;
+  left: 57px;
+  top: 2451px;
+  background: rgba(234, 234, 234, 0.7);
+  border-radius: 25px;
+}
+
+.box3 {
+  position: absolute;
+  width: 574px;
+  height: 264px;
+  left: 661px;
+  top: 2451px;
+  background: rgba(234, 234, 234, 0.7);
+  border-radius: 25px;
+}
+
+.box4 {
+  position: absolute;
+  width: 574px;
+  height: 264px;
+  left: 1265px;
+  top: 2451px;
+  background: rgba(234, 234, 234, 0.7);
+  border-radius: 25px;
+}
+
+.box5 {
+  position: absolute;
+  width: 574px;
+  height: 264px;
+  left: 57px;
+  top: 2745px;
+  background: rgba(234, 234, 234, 0.7);
+  border-radius: 25px;
+}
+
+.box6 {
+  position: absolute;
+  width: 574px;
+  height: 264px;
+  left: 661px;
+  top: 2745px;
+  background: rgba(234, 234, 234, 0.7);
+  border-radius: 25px;
+}
+
+.box7 {
+  position: absolute;
+  width: 574px;
+  height: 264px;
+  left: 1265px;
+  top: 2745px;
+  background: rgba(234, 234, 234, 0.7);
+  border-radius: 25px;
+}
+
+.box8 {
+  position: absolute;
+  width: 574px;
+  height: 264px;
+  left: 57px;
+  top: 3039px;
+  background: rgba(234, 234, 234, 0.7);
+  border-radius: 25px;
+}
+
+.box9 {
+  position: absolute;
+  width: 574px;
+  height: 264px;
+  left: 661px;
+  top: 3039px;
+  background: rgba(234, 234, 234, 0.7);
+  border-radius: 25px;
+}
+
+.box10 {
+  position: absolute;
+  width: 574px;
+  height: 264px;
+  left: 1265px;
+  top: 3039px;
+  background: rgba(234, 234, 234, 0.7);
+  border-radius: 25px;
+}
+
+.line5 {
+  position: absolute;
+  width: 43px;
+  height: 0px;
+  left: 33px;
+  top: 3367.5px;
+  border: 3px solid #5F5F5F;
+}
+
+.headline3 {
+  position: absolute;
+  width: 328px;
+  height: 45px;
+  left: 106px;
+  top: 3345px;
+  font-family: League Spartan;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 45px;
+  color: #5F5F5F;
+}
+
+.profile {
+  position: absolute;
+  width: 507px;
+  height: 206px;
+  left: 30px;
+  top: 3463px;
+  font-family: League Spartan;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 70px;
+  line-height: 87px;
+  color: #282828;
+}
+
+.profile_description {
+  position: absolute;
+  width: 531px;
+  height: 205px;
+  left: 30px;
+  top: 3665px;
+  font-family: Work Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 28px;
+  color: #282828;
+  text-align: justify;
+}
+
+.button_title {
+  position: absolute;
+  width: 432px;
+  height: 42px;
+  left: 80px;
+  top: 3995px;
+  font-family: Work Sans;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 42px;
+  color: #FFFFFF;
+  z-index: 999;
+}
+
+.box11 {
+  position: absolute;
+  width: 531px;
+  height: 72px;
+  left: 30px;
+  top: 3980px;
+  background: #282828;
+  border-radius: 25px;
 }
