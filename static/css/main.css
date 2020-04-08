@@ -21,7 +21,8 @@ body {
 	margin: 0;
 	background: #ffffff;
 	font-family: 'Work Sans', sans-serif;
-	font-weight: 400;
+  font-weight: 400;
+  padding-bottom: 3em;
 }
 
 header{
@@ -31,6 +32,7 @@ header{
   z-index: 999;
   width: 100%;
 }
+
 
 .nav-toggle {
   display: none;
@@ -358,7 +360,6 @@ nav a:hover {
   height: 264px;
   left: 57px;
   top: 2451px;
-  background: rgba(234, 234, 234, 0.7);
   border-radius: 25px;
 }
 
@@ -494,22 +495,7 @@ nav a:hover {
   text-align: justify;
 }
 
-.button_title {
-  position: absolute;
-  width: 432px;
-  height: 42px;
-  left: 80px;
-  top: 3995px;
-  font-family: Work Sans;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 36px;
-  line-height: 42px;
-  color: #FFFFFF;
-  z-index: 999;
-}
-
-.box11 {
+.findout_button {
   position: absolute;
   width: 531px;
   height: 72px;
@@ -517,4 +503,167 @@ nav a:hover {
   top: 3980px;
   background: #282828;
   border-radius: 25px;
+  font-family: Work Sans;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 42px;
+  color: #FFFFFF;
+  z-index: 999;
+}
+
+.me_shape {
+  position: absolute;
+  width: 1006.71px;
+  height: 981.06px;
+  left: 890px;
+  top: 3380px;
+}
+
+.headline4 {
+  position: absolute;
+  width: 328px;
+  height: 45px;
+  left: 106px;
+  top: 4400px;
+  font-family: League Spartan;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 45px;
+  color: #5F5F5F;
+}
+
+.line6 {
+  position: absolute;
+  width: 43px;
+  height: 0px;
+  left: 33px;
+  top: 4420.5px;
+  border: 3px solid #5F5F5F;
+}
+
+.contact {
+  position: absolute;
+  width: 1012px;
+  height: 82px;
+  left: 30px;
+  top: 4516px;
+  font-family: League Spartan;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 70px;
+  color: #282828;
+}
+
+.contact_description {
+  position: absolute;
+  width: 531px;
+  height: 205px;
+  left: 30px;
+  top: 4718px;
+  font-family: Work Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 28px;
+  color: #282828;
+  text-align: justify;
+}
+
+.contact_form1 {
+  position: absolute;
+  width: 420px;
+  height: 86px;
+  left: 810px;
+  top: 4516px;
+  background: #F2F2F2;
+  border-radius: 25px;
+  font-family: Work Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 22px;
+  line-height: 28px;
+  border: #F2F2F2;
+  padding-left: 40px;
+  padding-top: 29px;
+  padding-bottom: 29px; 
+} 
+
+.contact_form2 {
+  position: absolute;
+  width: 920px;
+  height: 86px;
+  left: 810px;
+  top: 4602px;
+  margin-top: 30px;
+  background: #F2F2F2;
+  border: #F2F2F2;
+  border-radius: 25px;
+  font-family: Work Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 22px;
+  line-height: 28px;
+  padding-left: 40px;
+  padding-top: 29px;
+  padding-bottom: 29px;  
+}
+
+.contact_form3 {
+  position: absolute;
+  width: 920px;
+  height: 434px;
+  left: 810px;
+  top: 4748px;
+  background: #F2F2F2;
+  border: #F2F2F2;
+  border-radius: 25px;
+  font-family: Work Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 22px;
+  line-height: 28px;
+  padding: 40px;
+}
+
+.linkedIn {
+  position: absolute;
+  width: 57px;
+  height: 57px;
+  left: 1779px;
+  top: 4748px;
+}
+
+.dribble {
+  position: absolute;
+  width: 57px;
+  height: 57px;
+  left: 1779px;
+  top: 4865px;
+}
+
+.download {
+  position: absolute;
+  width: 57px;
+  height: 57px;
+  left: 1779px;
+  top: 4982px;
+}
+
+.send_button {
+  position: absolute;
+  width: 182px;
+  height: 53px;
+  left: 1548px;
+  top: 5212px;
+  background: #99C5C4;
+  border: #99C5C4;
+  border-radius: 20px;
+  font-family: Work Sans;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 42px;
+  color: #FFFFFF;
 }

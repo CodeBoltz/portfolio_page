@@ -5,8 +5,7 @@
   <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
   <!-- <meta charset="UTF-8"> -->
 </head>
-  <body>
-
+<body>
     <header>
         <!--{% block content %}-->
         <img src="/static/images/logo_only.png" alt="logo" class="logo" id="logo">
@@ -52,7 +51,7 @@
   </div>
   <div class="line4"></div>
   <div class="work">All my design work</div>
-  <div class="box2"></div>
+  <img src="/static/images/Logo_showcase.png" class="box2">
   <div class="box3"></div>
   <div class="box4"></div>
   <div class="box5"></div>
@@ -71,7 +70,48 @@
   <div class="profile_description">
     I am a 21 year old Interaction Design student from Berlin. Are you as passionate about design, as me. If so I would love to work with you. Check out my profile page to find out more about me. 
   </div>
-  <div class="box11"></div>
-  <div class="button_title">Find out more about me</div>
-  </body>
+  <button type="button" class="findout_button" >Find out more about me</button>
+  <img src="/static/images/me_shape.jpg" alt="Picture of Gregor Boltz" class="me_shape">
+  <div class="headline4">contact</div>
+  <div class="line6"></div>
+  <div class="contact">
+    Get in touch 
+    <br>
+    with me!
+  </div>
+  <div class="contact_description">I am always ready to work on new projects. If you want to work with me, send me a message and willl talk about it.</div>
+  <div>
+    <form>
+      <textarea class="contact_form1" id="contact_form1" maxlength="320" type="email" name="contact_form1" placeholder="Your email">
+      </textarea>
+    </form>
+  </div>
+  <div>
+    <form>
+      <textarea class="contact_form2" cols="50" rows="1" maxlength="120"  id="contact_form2" type="text" name="contact_form2" placeholder="Subject">
+      </textarea>
+    </form>
+  </div>
+  <div>
+    <form>
+      <textarea cols="80" rows="3" maxlength="1200" class="contact_form3" id="contact_form3" type="text" name="contact_form3" placeholder="Add your message here...">
+      </textarea>
+    </form>
+  </div>
+  <a href="https://www.linkedin.com/in/gregor-boltz/">
+    <img src="/static/images/linkedin_icon.svg" class="linkedIn">
+  </a> 
+  <a href="https://dribbble.com/gregor_boltz">
+    <img src="/static/images/dribble_icon.svg" class="dribble">
+  </a> 
+  <a href="https://drive.google.com/drive/folders/1Ohgseq8o5t4ngzQ5RT8r3B0WbCoxYNv9?usp=sharing">
+    <img src="/static/images/download_icon.svg" class="download">
+  </a>
+  <button type="button" class="send_button" onclick="alert('munchie ich liebe dich <3')">Send</button>
+</body>
+<footer>
+  <div>
+    
+  </div>
+</footer>
 </html>
