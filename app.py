@@ -13,6 +13,13 @@ CORS(app, resources={r"/api/*": {"origins": "http://127.0.0.1"}})
 def index():
     return render_template('index.html')
 
+@app.route('/profile')
+def profile():
+    return render_template('profile.html')
+
+@app.route('/work')
+def work():
+    return render_template('work.html')
 
 # Run this application if the file is executed, e.g. as "python3 backend.py" 
 if __name__ == '__main__':  

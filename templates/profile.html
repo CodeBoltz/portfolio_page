@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Profile</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+  <!-- <meta charset="UTF-8"> -->
+</head>
+<body>
+  <a name="top"></a>
+    <header>
+        <!--{% block content %}-->
+        <img src="/static/images/logo_only.png" alt="logo" class="logo" id="logo">
+        <input type="checkbox" id="nav-toggle" class="nav-toggle">
+        <nav>
+          <ul>
+            <li><a href="/">home</a></li>
+            <li><a href="#">work</a></li>
+            <li><a href="#">profile</a></li>
+            <li><a href="#">contact</a></li>
+          </ul>
+        </nav>
+        <label for="nav-toggle" class="nav-toggle-label">
+          <span></span>
+        </label>  
+      <!--{% endblock %}-->
+    </header>
+    <div>
+        <div class="title_profile">
+            Hi, <br> I am <br> Greg.
+        </div>
+        <div class="line_profile1"></div>
+        <div class="line_profile2"></div>
+        <div class="line_profile3"></div>
+    </div>
+    <div>
+        <div>
+            <img src="/static/images/me1_2.jpg" alt="Image of Gregor Boltz" class="image_me1">
+        </div>
+        <div>
+            <img src="/static/images/me2_2.jpg" alt="Image of Gregor Boltz" class="image_me2">
+        </div>
+        <div>
+            <img src="/static/images/me3_2.jpg" alt="Image of Gregor Boltz" class="image_me3">
+        </div>
+    </div>
+    <div>
+        <div>
+            <div class="headline_profile_1">More about me</div>
+        </div>
+        <div>
+            <div class="about_me">I am passionate about designing simple and beautiful solutions to meaningful problems. I want to use my passion for design to do something good in the world. For me, it all started back in 2011, where I saw a photoshopped image online. I couldn’t wrap my head around how this image was created and since then I was hooked. From this moment on I never stopped creating and visualizing new things. I taught myself how to edit pictures, create interfaces and everything else I was curious about. This got me to where I am today, studying interaction design at CODE university.</div> 
+        </div>
+        <div>
+            <div class="headline_profile_2">Where</div>
+        </div>
+        <div>
+            <div class="where">Berlin, Germany</div>
+        </div>
+        <div>
+            <div class="headline_profile_3">Skills</div>
+        </div>
+        <div>
+            <div class="skills_box1">Screen Design</div>
+        </div>
+        <div>
+            <div class="skills_box2">Editorial Design</div>
+        </div>
+        <div>
+            <div class="skills_box3">Figma</div>
+        </div>
+        <div>
+            <div class="skills_box4">Adobe Suite</div>
+        </div>
+        <div>
+            <div class="skills_box5">Html & CSS</div>
+        </div>
+        <div>
+            <div class="headline_profile_4">Brand experience</div>
+        </div>
+        <div>
+            <div class="brand_box1">Uber</div>
+        </div>
+        <div>
+            <div class="brand_box2">Zalando</div>
+        </div>
+        <div>
+            <div class="brand_box3">Lemoncat</div>
+        </div>
+        <div>
+            <div class="headline_profile_5">Find me on</div>
+        </div>
+        <div>
+            <a href="https://dribbble.com/gregor_boltz">
+                <img src="/static/images/dribble_icon.svg" alt="Find me on Dribble" class="profile_dribble">
+            </a>
+        </div>
+        <div>
+            <a href="https://www.linkedin.com/in/gregor-boltz/">
+                <img src="/static/images/linkedin_icon.svg" alt="Find me on LinekdIn" class="profile_linkedin">
+            </a>
+        </div>
+    </div>
+</body>
+<footer class="footer_profile">
+    <div>
+      <img src="/static/images/GB_logo.svg" alt="Gregor Boltz Logo" class="gb_logo_2">
+    </div>
+    <div class="imprint_2">
+      www.boltz.design
+      <br>
+      boltz.gregor@gmail.com
+      <br>
+      017657893002
+    </div>
+    <div class="name_footer_2">Gregor Boltz</div>
+    <div class="line7_2"></div>
+    <a href="https://www.linkedin.com/in/gregor-boltz/">
+      <div class="linkedIn_footer_2">LinkedIn</div>
+    </a>
+    <div class="line8_2"></div>
+    <a href="https://dribbble.com/gregor_boltz">
+      <div class="dribble_footer_2">Dribble</div>
+    </a>
+    <div class="line9_2"></div>
+    <a href="#top" class="back_to_top_2">Back to the top</a>
+  </footer>
+  </html>

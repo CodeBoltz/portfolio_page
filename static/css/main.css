@@ -263,6 +263,7 @@ nav a:hover {
   height: 1080px;
   left: 626px;
   top: 1082px;
+  object-fit: cover;
 }
 
 .headline {
@@ -668,6 +669,8 @@ nav a:hover {
   color: #FFFFFF;
 }
 
+/* here start css for footer main page */
+
 footer {
   position: absolute;
   width: 100%;
@@ -797,3 +800,478 @@ footer {
   padding-right: 50px;
   text-decoration: none;
 }
+
+/* Here starts CSS of Profile Page */
+
+.title_profile {
+  position: absolute;
+  width: 285px;
+  height: 360px;
+  left: 30px;
+  top: 194px;
+  font-family: League Spartan;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 96px;
+  line-height: 120px;
+  color: #282828;
+  z-index: 999;
+}
+
+.line_profile1 {
+  position: absolute;
+  width: 137px; 
+  height: 0px;
+  left: 30px;
+  top: 280px;
+  border: 6px solid #99C5C4;
+}
+
+.line_profile2 {
+  position: absolute;
+  width: 220px;
+  height: 0px;
+  left: 30px;
+  top: 400px;
+  border: 6px solid #99C5C4;
+}
+
+.line_profile3 {
+  position: absolute;
+  width: 290px;
+  height: 0px;
+  left: 30px;
+  top: 520px;
+  border: 6px solid #99C5C4;
+}
+
+.image_me1 {
+  position: absolute;
+  width: 900px;
+  height: 675px;
+  left: 425px;
+  top: 198px;
+  border-radius: 25px;
+  object-fit: cover;
+}
+
+.image_me2 {
+  position: absolute;
+  width: 379.8px;
+  height: 345.6px; 
+  left: 1343.9px;
+  top: 198px;
+  border-radius: 25px;
+  object-fit: cover;
+}
+
+.image_me3 {
+  position: absolute;
+  width: 379.8px;
+  height: 310.5px;
+  left: 1343.9px;
+  top: 562.5px;
+  border-radius: 25px;
+  object-fit: cover;
+}
+
+.headline_profile_1 {
+  position: absolute;
+  width: 285px;
+  height: 32px;
+  left: 425px;
+  top: 1060px;
+  font-family: League Spartan;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 45px;
+  color: #282828;
+}
+
+.about_me {
+  position: absolute;
+  width: 1000px;
+  height: 231px;
+  left: 425px;
+  top: 1122px;
+  font-family: Work Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 28px;
+  color: #282828;
+}
+
+.headline_profile_2 {
+  position: absolute;
+  width: 126px;
+  height: 32px;
+  left: 425px;
+  top: 1403px;
+  font-family: League Spartan;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 45px;
+  color: #282828;
+}
+
+.where {
+  position: absolute;
+  width: 188px;
+  height: 28px;
+  left: 425px;
+  top: 1465px;
+  font-family: Work Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 28px;
+  color: #282828;
+}
+
+.headline_profile_3 {
+  position: absolute;
+  width: 126px;
+  height: 32px;
+  left: 425px;
+  top: 1543px;
+  font-family: League Spartan;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 45px;
+  color: #282828;
+}
+
+.skills_box1 {
+  position: absolute;
+  width: 219px;
+  height: 46px;
+  left: 425px;
+  top: 1605px;
+  background: #F2F2F2;
+  border-radius: 25px;
+  font-family: Work Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 46px;
+  color: #282828; 
+  text-align: center;
+  margin-right: 30px;
+  vertical-align: middle;
+}
+
+.skills_box2 {
+  position: absolute;
+  width: 219px;
+  height: 46px;
+  left: 674px;
+  top: 1605px;
+  background: #F2F2F2;
+  border-radius: 25px;
+  font-family: Work Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 46px;
+  color: #282828; 
+  text-align: center;
+  margin-right: 30px;
+  vertical-align: middle;
+}
+
+.skills_box3 {
+  position: absolute;
+  width: 101px;
+  height: 46px;
+  left: 923px;
+  top: 1605px;
+  background: #F2F2F2;
+  border-radius: 25px;
+  font-family: Work Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 46px;
+  color: #282828; 
+  text-align: center;
+  margin-right: 30px;
+  vertical-align: middle;
+}
+
+.skills_box4 {
+  position: absolute;
+  width: 168px;
+  height: 46px;
+  left: 1054px;
+  top: 1605px;
+  background: #F2F2F2;
+  border-radius: 25px;
+  font-family: Work Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 46px;
+  color: #282828; 
+  text-align: center;
+  margin-right: 30px;
+  vertical-align: middle;
+}
+
+.skills_box5 {
+  position: absolute;
+  width: 161px;
+  height: 46px;
+  left: 1252px;
+  top: 1605px;
+  background: #F2F2F2;
+  border-radius: 25px;
+  font-family: Work Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 46px;
+  color: #282828; 
+  text-align: center;
+  margin-right: 30px;
+  vertical-align: middle;
+}
+
+.headline_profile_4 {
+  position: absolute;
+  width: 338px;
+  height: 32px;
+  left: 425px;
+  top: 1701px;
+  font-family: League Spartan;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 45px;
+  color: #282828;
+}
+
+.brand_box1 {
+  position: absolute;
+  width: 87px;
+  height: 46px;
+  left: 425px;
+  top: 1763px;
+  background: #F2F2F2;
+  border-radius: 25px;
+  font-family: Work Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 46px;
+  color: #282828; 
+  text-align: center;
+  margin-right: 30px;
+  vertical-align: middle;
+}
+
+.brand_box2 {
+  position: absolute;
+  width: 129px;
+  height: 46px;
+  left: 542px;
+  top: 1763px;
+  background: #F2F2F2;
+  border-radius: 25px;
+  font-family: Work Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 46px;
+  color: #282828; 
+  text-align: center;
+  margin-right: 30px;
+  vertical-align: middle;
+}
+
+.brand_box3 {
+  position: absolute;
+  width: 166px;
+  height: 46px;
+  left: 701px;
+  top: 1763px;
+  background: #F2F2F2;
+  border-radius: 25px;
+  font-family: Work Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 46px;
+  color: #282828; 
+  text-align: center;
+  margin-right: 30px;
+  vertical-align: middle;
+}
+
+.headline_profile_5 {
+  position: absolute;
+  width: 338px;
+  height: 32px;
+  left: 425px;
+  top: 1859px;
+  font-family: League Spartan;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 45px;
+  color: #282828;
+}
+
+.profile_dribble {
+  position: absolute;
+  width: 57px;
+  height: 57px;
+  left: 425px;
+  top: 1921px;
+}
+
+.profile_linkedin {
+  position: absolute;
+  width: 57px;
+  height: 57px;
+  left: 512px;
+  top: 1921px;
+}
+
+/* here starts the CSS for the footer */
+
+.footer_profile {
+  position: absolute;
+  width: 100%;
+  height: 400px;
+  top: 2203px;
+  left: 0;
+  right: 0;
+  background: #282828;
+} 
+
+.gb_logo_2 {
+  position: absolute;
+  width: 106px;
+  height: 106px;
+  left: 30px;
+  top: 80px;
+}
+
+.imprint_2 {
+  position: absolute;
+  width: 285px;
+  height: 84px;
+  left: 30px;
+  top: 220px;
+  font-family: Work Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 28px;
+  color: #FFFFFF;
+}
+
+.name_footer_2 { 
+  position: absolute;
+  width: 159px;
+  height: 28px;
+  left: 700px;
+  top: 220px;
+  font-family: League Spartan;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 30px;
+  color: #FFFFFF;
+  
+}
+
+.line7_2 {
+  position: absolute;
+  width: 20px;
+  height: 0px;
+  left: 859px;
+  top: 233px;
+  border: 2px solid #ffffff;
+  transform: rotate(-90deg);
+  padding-left: 50px;
+  padding-right: 50px;
+   
+}
+.linkedIn_footer_2 {
+  position: absolute;
+  width: 100px;
+  height: 28px;
+  left: 959px;
+  top: 220px;
+  font-family: Work Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 28px;
+  color: #FFFFFF;
+}
+
+.dribble_footer_2 {
+  position: absolute;
+  width: 85px;
+  height: 28px;
+  left: 1109px;
+  top: 220px;
+  font-family: Work Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 28px;
+  color: #FFFFFF;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+.line8_2 {
+  position: absolute;
+  width: 20px;
+  height: 0px;
+  left: 1059px;
+  top: 233px;
+  border: 2px solid #ffffff;
+  transform: rotate(-90deg);
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+.line9_2 {
+  position: absolute;
+  width: 20px;
+  height: 0px;
+  left: 1244px;
+  top: 233px;
+  border: 2px solid #ffffff;
+  transform: rotate(-90deg);
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+.back_to_top_2 {
+  position: absolute;
+  width: 400px;
+  height: 28px;
+  left: 1294px;
+  top: 220px;
+  font-family: Work Sans;
+  font-style: medium;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 28px;
+  color: #FFFFFF;
+  padding-left: 50px;
+  padding-right: 50px;
+  text-decoration: none;
+}
+
+/* here starts css for work page */ 
+
