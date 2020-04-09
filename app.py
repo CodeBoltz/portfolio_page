@@ -21,6 +21,10 @@ def profile():
 def work():
     return render_template('work.html')
 
+@app.route('/ping_work')
+def ping_work():
+    return render_template('ping_work.html')
+
 # Run this application if the file is executed, e.g. as "python3 backend.py" 
 if __name__ == '__main__':  
     app.debug = True
