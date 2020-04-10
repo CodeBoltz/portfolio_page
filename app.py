@@ -25,6 +25,10 @@ def work():
 def ping_work():
     return render_template('ping_work.html')
 
+@app.route('/contact')
+def contact():
+    return render_template('contact.html')
+
 # Run this application if the file is executed, e.g. as "python3 backend.py" 
 if __name__ == '__main__':  
     app.debug = True

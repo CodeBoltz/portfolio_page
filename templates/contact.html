@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Profile</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+  <!-- <meta charset="UTF-8"> -->
+</head>
+<body>
+  <a name="top"></a>
+    <header>
+        <!--{% block content %}-->
+        <a href="/">
+          <img src="/static/images/logo_only.png" alt="logo" class="logo" id="logo">
+      </a>
+        <input type="checkbox" id="nav-toggle" class="nav-toggle">
+        <nav>
+          <ul>
+            <li><a href="/">home</a></li>
+            <li><a href="work">work</a></li>
+            <li><a href="profile">profile</a></li>
+            <li><a href="contact">contact</a></li>
+          </ul>
+        </nav>
+        <label for="nav-toggle" class="nav-toggle-label">
+          <span></span>
+        </label>  
+      <!--{% endblock %}-->
+    </header>
+    <div name="headline">
+        <div>
+            <div class="contact_headline">Get in touch with<br>me!</div>
+        </div>
+        <div>
+            <div class="contact_headline_line"></div>
+        </div>
+        <div>
+            <div class="contact_headline_line2"></div>
+        </div>
+        <div>
+            <div class="subline_contact">I am always ready to work on new projects. If you want to work with me, send me a message and willl talk about it.</div>
+        </div>
+    </div>
+    <div name="contact_form">
+        <div>
+            <form>
+              <textarea class="form1" id="contact_form1" maxlength="320" type="email" name="contact_form1" placeholder="Your email">
+              </textarea>
+              <textarea class="form2" cols="50" rows="1" maxlength="120"  id="contact_form2" type="text" name="contact_form2" placeholder="Subject">
+              </textarea>
+              <textarea class="form3" cols="80" rows="3" maxlength="1200"  id="contact_form3" type="text" name="contact_form3" placeholder="Add your message here...">
+              </textarea>
+            </form>
+        </div>
+        <div>
+            <button type="button" class="send_button_contact" onclick="alert('Hello Foundations :)')">Send</button>
+        </div>
+    </div>
+    <div name="social_icons">
+        <div>
+            <a href="https://www.linkedin.com/in/gregor-boltz/">
+                <img src="/static/images/linkedin_icon.svg" class="linkedIn_contact">
+            </a> 
+        </div>
+        <div>
+            <a href="https://dribbble.com/gregor_boltz">
+                <img src="/static/images/dribble_icon.svg" class="dribble_contact">
+            </a> 
+        </div>
+        <div>
+            <a href="https://drive.google.com/drive/folders/1Ohgseq8o5t4ngzQ5RT8r3B0WbCoxYNv9?usp=sharing">
+                <img src="/static/images/download_icon.svg" class="download_contact">
+            </a>
+        </div>
+    </div>
+</body>
+<footer class="footer_contact">
+    <div>
+        <div>
+            <img src="/static/images/GB_logo.svg" alt="Gregor Boltz Logo" class="gb_logo_5">
+        </div>
+        <div class="imprint_5">
+            www.boltz.design
+            <br>
+            boltz.gregor@gmail.com
+            <br>
+            017657893002
+        </div>
+    </div>
+    <div name="footer_middle_row">
+        <div>
+            <div class="name_footer_5">Gregor Boltz</div>
+        </div>
+        <div class="name_footer_5">Gregor Boltz</div>
+        <div>
+            <div class="line7_5"></div>
+        </div>
+        <div>
+            <a href="https://www.linkedin.com/in/gregor-boltz/">
+                <div class="linkedIn_footer_5">LinkedIn</div>
+            </a>
+        </div>
+        <div>
+            <a href="https://www.linkedin.com/in/gregor-boltz/">
+                <div class="linkedIn_footer_5">LinkedIn</div>
+            </a>
+        </div>
+        <div>
+            <div class="line8_5"></div>
+        </div>
+        <div>
+            <a href="https://dribbble.com/gregor_boltz">
+                <div class="dribble_footer_5">Dribble</div>
+            </a>
+        </div>
+        <div>
+            <div class="line9_5"></div>
+        </div>
+        <div>
+            <a href="#top" class="back_to_top_5">Back to the top</a>
+        </div>
+    </div>
+</footer>
+</html>

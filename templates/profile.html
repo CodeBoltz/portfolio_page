@@ -16,9 +16,9 @@
         <nav>
           <ul>
             <li><a href="/">home</a></li>
-            <li><a href="#">work</a></li>
-            <li><a href="#">profile</a></li>
-            <li><a href="#">contact</a></li>
+            <li><a href="work">work</a></li>
+            <li><a href="profile">profile</a></li>
+            <li><a href="contact">contact</a></li>
           </ul>
         </nav>
         <label for="nav-toggle" class="nav-toggle-label">
@@ -26,15 +26,21 @@
         </label>  
       <!--{% endblock %}-->
     </header>
-    <div>
-        <div class="title_profile">
-            Hi, <br> I am <br> Greg.
+    <div name="headline">
+        <div>
+            <div class="title_profile">Hi, <br> I am <br> Greg.</div>
         </div>
-        <div class="line_profile1"></div>
-        <div class="line_profile2"></div>
-        <div class="line_profile3"></div>
+        <div>
+            <div class="line_profile1"></div>
+        </div>
+        <div>
+            <div class="line_profile2"></div>
+        </div>
+        <div>
+            <div class="line_profile3"></div>
+        </div>
     </div>
-    <div>
+    <div name="images">
         <div>
             <img src="/static/images/me1_2.jpg" alt="Image of Gregor Boltz" class="image_me1">
         </div>
@@ -45,7 +51,7 @@
             <img src="/static/images/me3_2.jpg" alt="Image of Gregor Boltz" class="image_me3">
         </div>
     </div>
-    <div>
+    <div name="description">
         <div>
             <div class="headline_profile_1">More about me</div>
         </div>
@@ -105,25 +111,49 @@
 </body>
 <footer class="footer_profile">
     <div>
-      <img src="/static/images/GB_logo.svg" alt="Gregor Boltz Logo" class="gb_logo_2">
+        <div>
+            <img src="/static/images/GB_logo.svg" alt="Gregor Boltz Logo" class="gb_logo_2">
+        </div>
+        <div class="imprint_2">
+            www.boltz.design
+            <br>
+            boltz.gregor@gmail.com
+            <br>
+            017657893002
+        </div>
     </div>
-    <div class="imprint_2">
-      www.boltz.design
-      <br>
-      boltz.gregor@gmail.com
-      <br>
-      017657893002
+    <div name="footer_middle_row">
+        <div>
+            <div class="name_footer_2">Gregor Boltz</div>
+        </div>
+        <div class="name_footer_2">Gregor Boltz</div>
+        <div>
+            <div class="line7_2"></div>
+        </div>
+        <div>
+            <a href="https://www.linkedin.com/in/gregor-boltz/">
+                <div class="linkedIn_footer_2">LinkedIn</div>
+            </a>
+        </div>
+        <div>
+            <a href="https://www.linkedin.com/in/gregor-boltz/">
+                <div class="linkedIn_footer_2">LinkedIn</div>
+            </a>
+        </div>
+        <div>
+            <div class="line8_2"></div>
+        </div>
+        <div>
+            <a href="https://dribbble.com/gregor_boltz">
+                <div class="dribble_footer_2">Dribble</div>
+            </a>
+        </div>
+        <div>
+            <div class="line9_2"></div>
+        </div>
+        <div>
+            <a href="#top" class="back_to_top_2">Back to the top</a>
+        </div>
     </div>
-    <div class="name_footer_2">Gregor Boltz</div>
-    <div class="line7_2"></div>
-    <a href="https://www.linkedin.com/in/gregor-boltz/">
-      <div class="linkedIn_footer_2">LinkedIn</div>
-    </a>
-    <div class="line8_2"></div>
-    <a href="https://dribbble.com/gregor_boltz">
-      <div class="dribble_footer_2">Dribble</div>
-    </a>
-    <div class="line9_2"></div>
-    <a href="#top" class="back_to_top_2">Back to the top</a>
-  </footer>
-  </html>
+</footer>
+</html>

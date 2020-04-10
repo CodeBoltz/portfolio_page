@@ -259,10 +259,10 @@ nav a:hover {
 
 .ping_2 {
   position: absolute;
-  width: 1257px;
-  height: 1080px;
-  left: 626px;
-  top: 1082px;
+  width: 1100px;  
+  height: 1170px;  
+  left: 660px;
+  top: 1000px;
   object-fit: cover;
 }
 
@@ -1606,6 +1606,579 @@ footer {
 }
 
 .back_to_top_3 {
+  position: absolute;
+  width: 400px;
+  height: 28px;
+  left: 1294px;
+  top: 220px;
+  font-family: Work Sans;
+  font-style: medium;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 28px;
+  color: #FFFFFF;
+  padding-left: 50px;
+  padding-right: 50px;
+  text-decoration: none;
+}
+
+/* here starts css of work page */
+
+.headline { 
+  position: absolute;
+  width: 1211px;
+  height: 101px;
+  left: 355px;
+  top: 289px;
+  font-family: League Spartan;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 96px;
+  line-height: 120px;
+  text-align: center;
+  color: #282828;
+  z-index: 999;
+}
+
+.headline_line {
+  position: absolute;
+  width: 1135px;
+  height: 0px;
+  left: 395px;
+  top: 375px;
+  border: 6px solid #99C5C4;
+}
+
+.subline_work {
+  position: absolute;
+  width: 844px;
+  height: 117px;
+  left: 540px;
+  top: 437px;
+  font-family: Work Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 28px;
+  text-align: center;
+  color: #282828;
+}
+
+.work_box1 {
+  position: absolute;
+  width: 574px;
+  height: 264px;
+  left: 57px;
+  top: 604px;
+  border-radius: 25px;
+  object-fit: cover;
+}
+
+.work_box2 {
+  position: absolute;
+  width: 574px;
+  height: 264px;
+  left: 661px;
+  top: 604px;
+  background: rgba(234, 234, 234, 0.7);
+  border-radius: 25px;
+}
+
+.work_box3 {
+  position: absolute;
+  width: 574px;
+  height: 264px;
+  left: 1265px;
+  top: 604px;
+  background: rgba(234, 234, 234, 0.7);
+  border-radius: 25px;
+}
+
+.work_box4 {
+  position: absolute;
+  width: 574px;
+  height: 264px;
+  left: 57px;
+  top: 898px;
+  background: rgba(234, 234, 234, 0.7);
+  border-radius: 25px;
+}
+
+.work_box5 {
+  position: absolute;
+  width: 574px;
+  height: 264px;
+  left: 661px;
+  top: 898px;
+  background: rgba(234, 234, 234, 0.7);
+  border-radius: 25px;
+}
+
+.work_box6 {
+  position: absolute;
+  width: 574px;
+  height: 264px;
+  left: 1265px;
+  top: 898px;
+  background: rgba(234, 234, 234, 0.7);
+  border-radius: 25px;
+}
+
+.work_box7 {
+  position: absolute;
+  width: 574px;
+  height: 264px;
+  left: 57px;
+  top: 1192px;
+  background: rgba(234, 234, 234, 0.7);
+  border-radius: 25px;
+}
+
+.work_box8 {
+  position: absolute;
+  width: 574px;
+  height: 264px;
+  left: 661px;
+  top: 1192px;
+  background: rgba(234, 234, 234, 0.7);
+  border-radius: 25px;
+}
+
+.work_box9 {
+  position: absolute;
+  width: 574px;
+  height: 264px;
+  left: 1265px;
+  top: 1192px;
+  background: rgba(234, 234, 234, 0.7);
+  border-radius: 25px;
+}
+
+.work_box10 {
+  position: absolute;
+  width: 574px;
+  height: 264px;
+  left: 57px;
+  top: 1486px;
+  background: rgba(234, 234, 234, 0.7);
+  border-radius: 25px;
+}
+
+.work_box11 {
+  position: absolute;
+  width: 574px;
+  height: 264px;
+  left: 661px;
+  top: 1486px;
+  background: rgba(234, 234, 234, 0.7);
+  border-radius: 25px;
+}
+
+.work_box12 {
+  position: absolute;
+  width: 574px;
+  height: 264px;
+  left: 1265px;
+  top: 1486px;
+  background: rgba(234, 234, 234, 0.7);
+  border-radius: 25px;
+}
+
+/* here starts css footer of work page */
+
+.footer_work {
+  position: absolute;
+  width: 100%;
+  height: 400px;
+  top: 1975px;
+  left: 0;
+  right: 0;
+  background: #282828;
+} 
+
+.gb_logo_4 {
+  position: absolute;
+  width: 106px;
+  height: 106px;
+  left: 30px;
+  top: 80px;
+}
+
+.imprint_4 {
+  position: absolute;
+  width: 285px;
+  height: 84px;
+  left: 30px;
+  top: 220px;
+  font-family: Work Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 28px;
+  color: #FFFFFF;
+}
+
+.name_footer_4 { 
+  position: absolute;
+  width: 159px;
+  height: 28px;
+  left: 700px;
+  top: 220px;
+  font-family: League Spartan;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 30px;
+  color: #FFFFFF;
+  
+}
+
+.line7_4 {
+  position: absolute;
+  width: 20px;
+  height: 0px;
+  left: 859px;
+  top: 233px;
+  border: 2px solid #ffffff;
+  transform: rotate(-90deg);
+  padding-left: 50px;
+  padding-right: 50px;
+   
+}
+.linkedIn_footer_4 {
+  position: absolute;
+  width: 100px;
+  height: 28px;
+  left: 959px;
+  top: 220px;
+  font-family: Work Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 28px;
+  color: #FFFFFF;
+}
+
+.dribble_footer_4 {
+  position: absolute;
+  width: 85px;
+  height: 28px;
+  left: 1109px;
+  top: 220px;
+  font-family: Work Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 28px;
+  color: #FFFFFF;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+.line8_4 {
+  position: absolute;
+  width: 20px;
+  height: 0px;
+  left: 1059px;
+  top: 233px;
+  border: 2px solid #ffffff;
+  transform: rotate(-90deg);
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+.line9_4 {
+  position: absolute;
+  width: 20px;
+  height: 0px;
+  left: 1244px;
+  top: 233px;
+  border: 2px solid #ffffff;
+  transform: rotate(-90deg);
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+.back_to_top_4 {
+  position: absolute;
+  width: 400px;
+  height: 28px;
+  left: 1294px;
+  top: 220px;
+  font-family: Work Sans;
+  font-style: medium;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 28px;
+  color: #FFFFFF;
+  padding-left: 50px;
+  padding-right: 50px;
+  text-decoration: none;
+}
+
+/* here start css of contact page */
+
+.contact_headline {
+  position: absolute;
+  width: 917px;
+  height: 206px;
+  left: 333px;
+  top: 316px;
+  font-family: League Spartan;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 96px;
+  line-height: 120px;
+  color: #282828;
+  z-index: 999;
+}
+
+.contact_headline_line {
+  position: absolute;
+  width: 860px;
+  height: 0px;
+  left: 333px;
+  top: 402px;
+  border: 6px solid #99C5C4;
+}
+
+.contact_headline_line2 {
+  position: absolute;
+  width: 200px;
+  height: 0px;
+  left: 333px;
+  top: 522px;
+  border: 6px solid #99C5C4;
+}
+
+.subline_contact {
+  position: absolute;
+  width: 900px;
+  height: 117px;
+  left: 333px;
+  top: 584px;
+  font-family: Work Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 28px;
+  text-align: left;
+  color: #282828;
+}
+
+.form1 {
+  position: absolute;
+  width: 420px;
+  height: 86px;
+  left: 333px;
+  top: 751px;
+  background: #F2F2F2;
+  border-radius: 25px;
+  font-family: Work Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 22px;
+  line-height: 28px;
+  border: #F2F2F2;
+  padding-left: 40px;
+  padding-top: 29px;
+  padding-bottom: 29px; 
+} 
+
+.form2 {
+  position: absolute;
+  width: 920px;
+  height: 86px;
+  left: 333px;
+  top: 837px;
+  margin-top: 30px;
+  background: #F2F2F2;
+  border: #F2F2F2;
+  border-radius: 25px;
+  font-family: Work Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 22px;
+  line-height: 28px;
+  padding-left: 40px;
+  padding-top: 29px;
+  padding-bottom: 29px;  
+}
+
+.form3 {
+  position: absolute;
+  width: 920px;
+  height: 434px;
+  left: 333px;
+  top: 977px;
+  background: #F2F2F2;
+  border: #F2F2F2;
+  border-radius: 25px;
+  font-family: Work Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 22px;
+  line-height: 28px;
+  padding: 40px;
+}
+
+.send_button_contact {
+  position: absolute;
+  width: 182px;
+  height: 53px;
+  left: 1071px;
+  top: 1441px;
+  background: #99C5C4;
+  border: #99C5C4;
+  border-radius: 20px;
+  font-family: Work Sans;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 42px;
+  color: #FFFFFF;
+}
+
+.linkedIn_contact {
+  position: absolute;
+  width: 57px;
+  height: 57px;
+  left: 1500px;
+  top: 977px;
+}
+
+.dribble_contact {
+  position: absolute;
+  width: 57px;
+  height: 57px;
+  left: 1500px;
+  top: 1084px;
+}
+
+.download_contact {
+  position: absolute;
+  width: 57px;
+  height: 57px;
+  left: 1500px;
+  top: 1191px;
+}
+
+/* here starts css for footer of contact */
+
+.footer_contact {
+  position: absolute;
+  width: 100%;
+  height: 400px;
+  top: 1741px;
+  left: 0;
+  right: 0;
+  background: #282828;
+} 
+
+.gb_logo_5 {
+  position: absolute;
+  width: 106px;
+  height: 106px;
+  left: 30px;
+  top: 80px;
+}
+
+.imprint_5 {
+  position: absolute;
+  width: 285px;
+  height: 84px;
+  left: 30px;
+  top: 220px;
+  font-family: Work Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 28px;
+  color: #FFFFFF;
+}
+
+.name_footer_5 { 
+  position: absolute;
+  width: 159px;
+  height: 28px;
+  left: 700px;
+  top: 220px;
+  font-family: League Spartan;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 30px;
+  color: #FFFFFF;
+  
+}
+
+.line7_5 {
+  position: absolute;
+  width: 20px;
+  height: 0px;
+  left: 859px;
+  top: 233px;
+  border: 2px solid #ffffff;
+  transform: rotate(-90deg);
+  padding-left: 50px;
+  padding-right: 50px;
+   
+}
+.linkedIn_footer_5 {
+  position: absolute;
+  width: 100px;
+  height: 28px;
+  left: 959px;
+  top: 220px;
+  font-family: Work Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 28px;
+  color: #FFFFFF;
+}
+
+.dribble_footer_5 {
+  position: absolute;
+  width: 85px;
+  height: 28px;
+  left: 1109px;
+  top: 220px;
+  font-family: Work Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 28px;
+  color: #FFFFFF;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+.line8_5 {
+  position: absolute;
+  width: 20px;
+  height: 0px;
+  left: 1059px;
+  top: 233px;
+  border: 2px solid #ffffff;
+  transform: rotate(-90deg);
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+.line9_5 {
+  position: absolute;
+  width: 20px;
+  height: 0px;
+  left: 1244px;
+  top: 233px;
+  border: 2px solid #ffffff;
+  transform: rotate(-90deg);
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+.back_to_top_5 {
   position: absolute;
   width: 400px;
   height: 28px;
