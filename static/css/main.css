@@ -265,13 +265,12 @@ nav a:hover {
   top: 1000px;
   object-fit: cover;
 }
-
-.headline {
+.recent_work_headline {
   position: absolute;
   width: 328px;
   height: 45px;
   left: 106px;
-  top: 1133px;
+  top: 1132px;
   font-family: League Spartan;
   font-style: normal;
   font-weight: bold;
