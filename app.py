@@ -8,7 +8,6 @@ app = Flask(__name__)
 CORS(app, resources={r"/api/*": {"origins": "http://127.0.0.1"}})
 
 # define what to do when the user navigates to "/"
-# this serves a static html file. 
 @app.route('/')
 def index():
     return render_template('index.html')
