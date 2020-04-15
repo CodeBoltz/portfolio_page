@@ -1,31 +1,6 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <title>Profile</title>
-  <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
-  <!-- <meta charset="UTF-8"> -->
-</head>
-<body>
-  <a name="top"></a>
-    <header>
-        <!--{% block content %}-->
-        <a href="/">
-            <img src="/static/images/logo_only.png" alt="logo" class="logo" id="logo">
-        </a>
-        <input type="checkbox" id="nav-toggle" class="nav-toggle">
-        <nav>
-          <ul>
-            <li><a href="/">home</a></li>
-            <li><a href="work">work</a></li>
-            <li><a href="profile">profile</a></li>
-            <li><a href="contact">contact</a></li>
-          </ul>
-        </nav>
-        <label for="nav-toggle" class="nav-toggle-label">
-          <span></span>
-        </label>  
-      <!--{% endblock %}-->
-    </header>
+{% extends "layout.html" %}
+{% block content %}
+    <title>Profile</title>
     <div name="headline">
         <div>
             <div class="title_profile">Hi, <br> I am <br> Greg.</div>
@@ -108,7 +83,6 @@
             </a>
         </div>
     </div>
-</body>
 <footer class="footer_profile">
     <div>
         <div>
@@ -157,3 +131,4 @@
     </div>
 </footer>
 </html>
+{% endblock %}

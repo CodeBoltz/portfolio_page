@@ -1,6 +1,6 @@
 from flask import Flask, jsonify, send_file
 from flask_cors import CORS
-from flask import render_template
+from flask import render_template, url_for
 
 
 app = Flask(__name__)
