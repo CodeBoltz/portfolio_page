@@ -2,6 +2,16 @@ from flask import Flask, jsonify, send_file
 from flask_cors import CORS
 from flask import render_template, url_for
 
+# test data for flask template
+posts = [
+    {
+        'headlin': 'Ping'
+        'when': 'September 2018, Berlin',
+        'what': 'In my first semester as an Interaction Design student, my team and I created the app “Ping”. Ping is a social network of explorers and people who want to get out of their comfort zone and meet new people. To demonstrate our idea I created mock–ups, landing page, clickable prototype, and a unique logo.',
+        'categories': 'First post content',
+        'find it here': 'April 20, 2018'
+    }
+]
 
 app = Flask(__name__)
 # enable the api to be accessed by frontend running on localhost
