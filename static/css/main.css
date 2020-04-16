@@ -40,7 +40,15 @@ header{
   width: 100%;
 }
 
+.Site { 
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
 
+.Site-content{
+  flex: 1;
+}
 
 .nav-toggle {
   display: none;
@@ -677,7 +685,7 @@ nav a:hover {
   color: #FFFFFF;
 }
 
-/* here start css for footer main page */
+/* here start css for footer */
 
 footer {
   position: absolute;
@@ -1151,6 +1159,8 @@ footer {
 
 /* here starts the CSS for the footer */
 
+
+
 .footer_profile {
   position: absolute;
   width: 100%;
@@ -1498,7 +1508,7 @@ footer {
   top: 1649px;
 }
 
-/* here start footer of ping page */
+/* here start footer of ping page 
 
 .footer_ping {
   position: absolute;
@@ -1629,6 +1639,7 @@ footer {
   padding-right: 50px;
   text-decoration: none;
 }
+*/
 
 /* here starts css of work page */
 
@@ -1792,7 +1803,7 @@ footer {
   border-radius: 25px;
 }
 
-/* here starts css footer of work page */
+/* here starts css footer of work page 
 
 .footer_work {
   position: absolute;
@@ -1922,7 +1933,7 @@ footer {
   padding-right: 50px;
   text-decoration: none;
 }
-
+*/
 /* here start css of contact page */
 
 .contact_headline {

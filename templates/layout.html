@@ -3,10 +3,11 @@
 <head>
     <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
 </head>
-<header>
+<body class="Site">
+  <header>
     <a href="/">
       <img src="/static/images/logo_only.png" alt="logo" class="logo" id="logo">
-  </a>
+    </a>
     <input type="checkbox" id="nav-toggle" class="nav-toggle">
     <nav>
       <ul>
@@ -19,8 +20,56 @@
     <label for="nav-toggle" class="nav-toggle-label">
       <span></span>
     </label>  
-</header>
-<body>
+  </header>
+  <main class="Site-content">
     {% block content%}{% endblock %}
+  </main>
+  <footer>
+    <div>
+        <div>
+            <img src="/static/images/GB_logo.svg" alt="Gregor Boltz Logo" class="gb_logo">
+        </div>
+        <div class="imprint">
+            www.boltz.design
+            <br>
+            boltz.gregor@gmail.com
+            <br>
+            017657893002
+        </div>
+    </div>
+    <div name="footer_middle_row">
+        <div>
+            <div class="name_footer">Gregor Boltz</div>
+        </div>
+        <div class="name_footer">Gregor Boltz</div>
+        <div>
+            <div class="line7"></div>
+        </div>
+        <div>
+            <a href="https://www.linkedin.com/in/gregor-boltz/">
+                <div class="linkedIn_footer">LinkedIn</div>
+            </a>
+        </div>
+        <div>
+            <a href="https://www.linkedin.com/in/gregor-boltz/">
+                <div class="linkedIn_footer">LinkedIn</div>
+            </a>
+        </div>
+        <div>
+            <div class="line8"></div>
+        </div>
+        <div>
+            <a href="https://dribbble.com/gregor_boltz">
+                <div class="dribble_footer">Dribble</div>
+            </a>
+        </div>
+        <div>
+            <div class="line9"></div>
+        </div>
+        <div>
+            <a href="#top" class="back_to_top">Back to the top</a>
+        </div>
+    </div>
+  </footer>
 </body>
 </html>
