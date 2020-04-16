@@ -20,15 +20,15 @@ CORS(app, resources={r"/api/*": {"origins": "http://127.0.0.1"}})
 # define what to do when the user navigates to "/"
 @app.route('/')
 def index():
-    return render_template('index.html')
+    return render_template('index.html', title="Home")
 
 @app.route('/profile')
 def profile():
-    return render_template('profile.html')
+    return render_template('profile.html', title="Profile")
 
 @app.route('/work')
 def work():
-    return render_template('work.html')
+    return render_template('work.html', title="Work")
 
 @app.route('/ping_work')
 def ping_work():
@@ -36,7 +36,7 @@ def ping_work():
 
 @app.route('/contact')
 def contact():
-    return render_template('contact.html')
+    return render_template('contact.html', title="Contact")
 
 # Run this application if the file is executed, e.g. as "python3 backend.py" 
 if __name__ == '__main__':  
