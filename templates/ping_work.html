@@ -1,4 +1,7 @@
 {% extends "layout.html" %}
+{% block head %}
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/ping_work.css') }}">
+{% endblock %}
 {% block content %}
     <div name="headline">
         <div class="headline_ping_work">Ping</div>
