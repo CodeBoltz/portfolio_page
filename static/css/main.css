@@ -40,6 +40,140 @@ header{
   width: 100%;
 }
 
+/* here start css for footer */
+
+footer {
+  position: absolute;
+  width: 100%;
+  height: 300px;
+  top: 5490px;
+  left: 0;
+  right: 0;
+  background: #282828;
+} 
+
+.gb_logo {
+  position: absolute;
+  width: 106px;
+  height: 106px;
+  left: 30px;
+  top: 60px;
+}
+
+.imprint {
+  position: absolute;
+  width: 285px;
+  height: 84px;
+  left: 30px;
+  top: 180px;
+  font-family: Work Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 28px;
+  color: #FFFFFF;
+}
+
+.name_footer { 
+  position: absolute;
+  width: 159px;
+  height: 28px;
+  left: 700px;
+  top: 180px;
+  font-family: League Spartan;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 30px;
+  color: #FFFFFF;
+  
+}
+
+.line7 {
+  position: absolute;
+  width: 20px;
+  height: 0px;
+  left: 859px;
+  top: 193px;
+  border: 2px solid #ffffff;
+  transform: rotate(-90deg);
+  padding-left: 50px;
+  padding-right: 50px;
+   
+}
+.linkedIn_footer {
+  position: absolute;
+  width: 100px;
+  height: 28px;
+  left: 959px;
+  top: 180px;
+  font-family: Work Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 28px;
+  color: #FFFFFF;
+}
+
+.dribble_footer {
+  position: absolute;
+  width: 85px;
+  height: 28px;
+  left: 1109px;
+  top: 180px;
+  font-family: Work Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 28px;
+  color: #FFFFFF;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+.line8 {
+  position: absolute;
+  width: 20px;
+  height: 0px;
+  left: 1059px;
+  top: 193px;
+  border: 2px solid #ffffff;
+  transform: rotate(-90deg);
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+.line9 {
+  position: absolute;
+  width: 20px;
+  height: 0px;
+  left: 1244px;
+  top: 193px;
+  border: 2px solid #ffffff;
+  transform: rotate(-90deg);
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+.back_to_top {
+  position: absolute;
+  width: 400px;
+  height: 28px;
+  left: 1294px;
+  top: 180px;
+  font-family: Work Sans;
+  font-style: medium;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 28px;
+  color: #FFFFFF;
+  padding-left: 50px;
+  padding-right: 50px;
+  text-decoration: none;
+}
+
+/* ends css for footer */
+
 .Site { 
   display: flex;
   min-height: 100vh;
@@ -685,138 +819,6 @@ nav a:hover {
   color: #FFFFFF;
 }
 
-/* here start css for footer */
-
-footer {
-  position: absolute;
-  width: 100%;
-  height: 300px;
-  top: 5490px;
-  left: 0;
-  right: 0;
-  background: #282828;
-} 
-
-.gb_logo {
-  position: absolute;
-  width: 106px;
-  height: 106px;
-  left: 30px;
-  top: 60px;
-}
-
-.imprint {
-  position: absolute;
-  width: 285px;
-  height: 84px;
-  left: 30px;
-  top: 180px;
-  font-family: Work Sans;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 24px;
-  line-height: 28px;
-  color: #FFFFFF;
-}
-
-.name_footer { 
-  position: absolute;
-  width: 159px;
-  height: 28px;
-  left: 700px;
-  top: 180px;
-  font-family: League Spartan;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 24px;
-  line-height: 30px;
-  color: #FFFFFF;
-  
-}
-
-.line7 {
-  position: absolute;
-  width: 20px;
-  height: 0px;
-  left: 859px;
-  top: 193px;
-  border: 2px solid #ffffff;
-  transform: rotate(-90deg);
-  padding-left: 50px;
-  padding-right: 50px;
-   
-}
-.linkedIn_footer {
-  position: absolute;
-  width: 100px;
-  height: 28px;
-  left: 959px;
-  top: 180px;
-  font-family: Work Sans;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 24px;
-  line-height: 28px;
-  color: #FFFFFF;
-}
-
-.dribble_footer {
-  position: absolute;
-  width: 85px;
-  height: 28px;
-  left: 1109px;
-  top: 180px;
-  font-family: Work Sans;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 24px;
-  line-height: 28px;
-  color: #FFFFFF;
-  padding-left: 50px;
-  padding-right: 50px;
-}
-
-.line8 {
-  position: absolute;
-  width: 20px;
-  height: 0px;
-  left: 1059px;
-  top: 193px;
-  border: 2px solid #ffffff;
-  transform: rotate(-90deg);
-  padding-left: 50px;
-  padding-right: 50px;
-}
-
-.line9 {
-  position: absolute;
-  width: 20px;
-  height: 0px;
-  left: 1244px;
-  top: 193px;
-  border: 2px solid #ffffff;
-  transform: rotate(-90deg);
-  padding-left: 50px;
-  padding-right: 50px;
-}
-
-.back_to_top {
-  position: absolute;
-  width: 400px;
-  height: 28px;
-  left: 1294px;
-  top: 180px;
-  font-family: Work Sans;
-  font-style: medium;
-  font-weight: 500;
-  font-size: 24px;
-  line-height: 28px;
-  color: #FFFFFF;
-  padding-left: 50px;
-  padding-right: 50px;
-  text-decoration: none;
-}
-
 /* Here starts CSS of Profile Page */
 
 .title_profile {
@@ -1157,9 +1159,7 @@ footer {
   top: 1921px;
 }
 
-/* here starts the CSS for the footer */
-
-
+/* here starts the CSS for the footer 
 
 .footer_profile {
   position: absolute;
@@ -1290,6 +1290,7 @@ footer {
   padding-right: 50px;
   text-decoration: none;
 }
+*/
 
 /* here starts css for work page */ 
 
@@ -2081,7 +2082,7 @@ footer {
   top: 1191px;
 }
 
-/* here starts css for footer of contact */
+/* here starts css for footer of contact 
 
 .footer_contact {
   position: absolute;
@@ -2212,3 +2213,4 @@ footer {
   padding-right: 50px;
   text-decoration: none;
 }
+*/
