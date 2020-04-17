@@ -340,10 +340,10 @@
   
   /* here starts the CSS for the footer profile */
   
-  .footer_profile {
+  footer {
     position: absolute;
     width: 100%;
-    height: 400px;
+    height: 300px;
     top: 2203px;
     left: 0;
     right: 0;

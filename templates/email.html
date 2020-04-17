@@ -1,0 +1,19 @@
+{% block form%}
+<div name="contact_form">
+    <div>
+      <div>
+        <form>
+          <textarea class="contact_form1" id="contact_form1" maxlength="320" type="email" name="contact_form1" placeholder="Your email">
+          </textarea>
+          <textarea class="contact_form2" cols="50" rows="1" maxlength="120"  id="contact_form2" type="text" name="contact_form2" placeholder="Subject">
+          </textarea>
+          <textarea class="contact_form3" cols="80" rows="3" maxlength="1200"  id="contact_form3" type="text" name="contact_form3" placeholder="Add your message here...">
+          </textarea>
+        </form>
+      </div>
+    </div>
+    <div>
+      <button type="button" class="send_button" onclick="alert('Hello Foundations :)')">Send</button>
+    </div>
+  </div>
+{% endblock %}
