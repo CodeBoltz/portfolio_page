@@ -1,6 +1,7 @@
 from flask import Flask, jsonify, send_file
 from flask_cors import CORS
-from flask import render_template, url_for
+from flask import render_template, url_for, flash, redirect
+from forms import RegistrationForm, LoginForm
 
 # test data for flask template
 posts = [
@@ -14,8 +15,10 @@ posts = [
 ]
 
 app = Flask(__name__)
+# secruity messure
+app.config['SECRET_KEY'] = '43d64d908f55fa813433db5cee72cb05'
 # enable the api to be accessed by frontend running on localhost
-CORS(app, resources={r"/api/*": {"origins": "http://127.0.0.1"}})
+#CORS(app, resources={r"/api/*": {"origins": "http://127.0.0.1"}})
 
 # define what to do when the user navigates to "/"
 @app.route('/')
@@ -37,6 +40,17 @@ def ping_work():
 @app.route('/contact')
 def contact():
     return render_template('contact.html', title="Contact")
+
+# route for forms
+@app.route('/register')
+def register():
+    form = RegistrationForm()
+    return render_template('register.html', title='Register', form=form)
+
+@app.route('/login')
+def login():
+    form = LoginForm()
+    return render_template('login.html', title='Login', form=form)
 
 # Run this application if the file is executed, e.g. as "python3 backend.py" 
 if __name__ == '__main__':  
