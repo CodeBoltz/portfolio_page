@@ -4,21 +4,12 @@ from datetime import datetime
 from flask_sqlalchemy import SQLAlchemy
 from flask import render_template, url_for, flash, redirect
 from forms import RegistrationForm, LoginForm
+from models import Work
 
 app = Flask(__name__)
 app.config['SECRET_KEY'] = '43d64d908f55fa813433db5cee72cb05'
 app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///site.db'
 db = SQLAlchemy(app)
-
-class Work(db.Model):
-    id = db.Column(db.Integer, primary_key=True)
-    title = db.Column(db.String(200), nullable=False)
-    date = db.Column(db.String(200), nullable=False,)
-    image_file = db.Column(db.String(20), nullable=False)
-    description = db.Column(db.Text, nullable=False, )
-
-    def __repr__(self):
-        return f"Work('{self.title}','{self.date}', '{self.image_file}', '{self.description}')"
 
 # define what to do when the user navigates to "/"
 @app.route('/')
