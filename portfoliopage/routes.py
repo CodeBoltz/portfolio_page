@@ -1,15 +1,8 @@
-from flask import Flask, jsonify, send_file
-from flask_cors import CORS
-from datetime import datetime
-from flask_sqlalchemy import SQLAlchemy
 from flask import render_template, url_for, flash, redirect
-from forms import RegistrationForm, LoginForm
-from models import Work
+from portfoliopage import app
+from portfoliopage.forms import RegistrationForm, LoginForm
+from portfoliopage.models import Work
 
-app = Flask(__name__)
-app.config['SECRET_KEY'] = '43d64d908f55fa813433db5cee72cb05'
-app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///site.db'
-db = SQLAlchemy(app)
 
 # define what to do when the user navigates to "/"
 @app.route('/')
@@ -42,8 +35,3 @@ def register():
 def login():
     form = LoginForm()
     return render_template('login.html', title='Login', form=form)
-
-# Run this application if the file is executed, e.g. as "python3 backend.py" 
-if __name__ == '__main__':  
-    app.debug = True
-    app.run() 

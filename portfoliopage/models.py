@@ -1,4 +1,4 @@
-from app import db
+from portfoliopage import db
 
 class Work(db.Model):
     id = db.Column(db.Integer, primary_key=True)
