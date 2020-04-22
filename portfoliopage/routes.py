@@ -1,6 +1,6 @@
-from flask import render_template, url_for, flash, redirect
+from flask import render_template, url_for, flash, redirect, request
 from portfoliopage import app
-from portfoliopage.forms import RegistrationForm, LoginForm
+from portfoliopage.forms import RegistrationForm, LoginForm, DesignForm
 from portfoliopage.models import Work
 
 
@@ -35,3 +35,8 @@ def register():
 def login():
     form = LoginForm()
     return render_template('login.html', title='Login', form=form)
+
+@app.route('/design_submit')
+def design_submit():
+    form = DesignForm()
+    return render_template('design_submit.html', title='Submit Design', form=form)
