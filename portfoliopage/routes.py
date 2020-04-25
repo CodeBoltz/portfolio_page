@@ -26,7 +26,10 @@ def contact():
     return render_template('contact.html', title="Contact")
 
 # route for forms
-@app.route('/design_submit', methods=['GET', 'POST'])
-def design_submit():
+@app.route('/submit', methods=['GET', 'POST'])
+def submit():
     form = DesignForm()
-    return render_template('design_submit.html', title='Submit Design', form=form)
+    if form.validate_on_submit():
+        flash(f'Design work submited for {form.title.data}!', 'success')
+        return redirect(url_for('index'))
+    return render_template('submit.html', title='Submit Design', form=form)
