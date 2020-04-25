@@ -1,6 +1,6 @@
 from flask import render_template, url_for, flash, redirect, request
 from portfoliopage import app
-from portfoliopage.forms import RegistrationForm, LoginForm, DesignForm
+from portfoliopage.forms import DesignForm
 from portfoliopage.models import Work
 
 
@@ -26,17 +26,7 @@ def contact():
     return render_template('contact.html', title="Contact")
 
 # route for forms
-@app.route('/register', methods=['GET', 'POST'])
-def register():
-    form = RegistrationForm()
-    return render_template('register.html', title='Register', form=form)
-
-@app.route('/login')
-def login():
-    form = LoginForm()
-    return render_template('login.html', title='Login', form=form)
-
-@app.route('/design_submit')
+@app.route('/design_submit', methods=['GET', 'POST'])
 def design_submit():
     form = DesignForm()
     return render_template('design_submit.html', title='Submit Design', form=form)
