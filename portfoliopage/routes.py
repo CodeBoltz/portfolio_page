@@ -19,7 +19,7 @@ def work():
 
 @app.route('/ping_work')
 def ping_work():
-    return render_template('ping_work.html')
+    return render_template('ping_work.html', title="Test work page")
 
 @app.route('/contact')
 def contact():

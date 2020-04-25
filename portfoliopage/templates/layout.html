@@ -1,6 +1,10 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
     <!-- Bootstrap CSS 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"> -->
     <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
@@ -15,15 +19,22 @@
     <input type="checkbox" id="nav-toggle" class="nav-toggle">
     <nav>
       <ul>
-        <li><a href="/">home</a></li>
-        <li><a href="work">work</a></li>
-        <li><a href="profile">profile</a></li>
-        <li><a href="contact">contact</a></li>
-      </ul>
+        <li><a href="{{ url_for('index') }}">home</a></li>
+        <li><a href="{{ url_for('work') }}">work</a></li>
+        <li><a href="{{ url_for('profile') }}">profile</a></li>
+        <li><a href="{{ url_for('profile') }}">contact</a></li>
+      </ul> 
     </nav>
     <label for="nav-toggle" class="nav-toggle-label">
       <span></span>
     </label>  
+
+    {% if title %}
+        <title>Gregor Boltz - {{ title }}</title>
+    {% else %}
+        <title>Gregor Boltz</title>
+    {% endif %}	
+
   </header>
   <main class="Site-content">
     {% with messages = get_flashed_messages(with_categories=true) %}
