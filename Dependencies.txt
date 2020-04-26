@@ -1,0 +1,6 @@
+Flask
+Flask wtforms
+SQLalchemy
+SQLAlchemy-ImageAttach
+bcrypt
+

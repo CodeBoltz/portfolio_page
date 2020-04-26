@@ -36,10 +36,3 @@ def submit():
         flash(f'Your design work has been submited!', 'success')
         return redirect(url_for('index'))
     return render_template('submit.html', title='Submit Design', form=form)
-
-# route for adding image to db
-#@app.route('/upload', methods=['GET', 'POST'])
-#def upload():
- #   file= request.files['inputFile']
-
- #   return file.filename
