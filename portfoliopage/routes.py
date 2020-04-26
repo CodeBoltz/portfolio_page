@@ -1,5 +1,5 @@
 from flask import render_template, url_for, flash, redirect, request
-from portfoliopage import app
+from portfoliopage import app, db
 from portfoliopage.forms import DesignForm
 from portfoliopage.models import Work
 
@@ -30,6 +30,16 @@ def contact():
 def submit():
     form = DesignForm()
     if form.validate_on_submit():
-        flash(f'Design work submited for {form.title.data}!', 'success')
+        work = Work(title=form.title.data, date=form.date.data, description=form.description.data, image=form.image.data)
+        db.session.add(work)
+        db.session.commit()
+        flash(f'Your design work has been submited!', 'success')
         return redirect(url_for('index'))
     return render_template('submit.html', title='Submit Design', form=form)
+
+# route for adding image to db
+#@app.route('/upload', methods=['GET', 'POST'])
+#def upload():
+ #   file= request.files['inputFile']
+
+ #   return file.filename
