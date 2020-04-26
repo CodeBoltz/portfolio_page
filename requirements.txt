@@ -1,0 +1,8 @@
+List of packages used:
+    - Python 
+    - Flask
+    - Flask wtforms
+    - SQLalchemy
+    - SQLAlchemy-ImageAttach
+    - bcrypt
+
