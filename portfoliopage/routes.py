@@ -42,4 +42,11 @@ def submit():
         return redirect(url_for('index'))
     return render_template('submit.html', title='Submit Design', form=form)
 
+#route for test work page template
+
+@app.route('/work_template')
+def work_template():
+    data = Work.query
+    return render_template('work_template.html', data=list, image=image)
+
 
