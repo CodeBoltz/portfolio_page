@@ -7,6 +7,6 @@ class DesignForm(FlaskForm):
     title = StringField('Title', validators=[DataRequired(), Length(min=2, max=200), ])
     date = StringField('Date', validators=[DataRequired(), Length(min=2, max=200), ])
     description = StringField('Description', validators=[DataRequired(), Length(min=2, max=1200), ])
-    image = FileField('Image', validators=[])
+    image = FileField('Image', validators=[DataRequired()])
     submit = SubmitField('Upload')
     
