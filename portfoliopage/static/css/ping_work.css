@@ -3,7 +3,7 @@
  .headline_ping_work {
     position: absolute;
     width: 222px;
-    height: 150px;
+    height: 50px;
     left: 164px;
     top: 710px;
     font-family: League Spartan;
@@ -39,13 +39,24 @@
   .image_ping2 {
     position: absolute;
     width: 379.8px;
-    height: 345.6px; 
+    height: 325.6px; 
     left: 1343.9px;
     top: 198px;
     border-radius: 25px;
     object-fit: cover;
   }
   
+  .image_ping3 {
+    position: absolute;
+    width: 379.8px;
+    height: 325.6px; 
+    left: 1343.9px;
+    top: 547.4px;
+    border-radius: 25px;
+    object-fit: cover;
+  }
+  
+
   .headline_ping_1 {
     position: absolute;
     width: 285px;

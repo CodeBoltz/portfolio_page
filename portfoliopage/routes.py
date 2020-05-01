@@ -33,9 +33,15 @@ def submit():
     if form.validate_on_submit():
         if request.files:
             image = request.files['image']
-            image.save(os.path.join(app.config['IMAGE_UPLOADS'], image.filename)) 
+            image2 = request.files['image2']
+            image3 = request.files['image3']
+            image.save(os.path.join(app.config['IMAGE_UPLOADS'], image.filename))
+            image2.save(os.path.join(app.config['IMAGE_UPLOADS'], image2.filename))
+            image3.save(os.path.join(app.config['IMAGE_UPLOADS'], image3.filename)) 
             url = image.filename
-        work = Work(title=form.title.data, date=form.date.data, description=form.description.data, image=url)
+            url2 = image2.filename
+            url3 = image3.filename
+        work = Work(title=form.title.data, date=form.date.data, description=form.description.data, image=url, image2=url2, image3=url3, link=form.link.data)
         db.session.add(work)
         db.session.commit()
         flash(f'Your design work has been submited!', 'success')
