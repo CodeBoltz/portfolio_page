@@ -10,7 +10,7 @@
         </div>
         <div name="images">
             <div>
-                <img src="{{work.image}}" alt="Image of project Ping" class="image_ping1">
+                <img src="/static/uploads/{{work.image}}" alt="Image of project Ping" class="image_ping1">
             </div>
             <div>
                 <img src="/static/images/Ping_4.png" alt="Image of project Ping" class="image_ping2">
@@ -21,13 +21,13 @@
                 <div class="headline_ping_1">When</div>
             </div>
             <div>
-                <div class="when">September 2018, Berlin.</div>        
+                <div class="when">{{work.date}}</div>        
             </div>
             <div>
                 <div class="headline_ping_2">What</div>
             </div>
             <div>
-                <div class="what">In my first semester as an Interaction Design student, my team and I created the app “Ping”. Ping is a social network of explorers and people who want to get out of their comfort zone and meet new people. To demonstrate our idea I created mock–ups, landing page, clickable prototype, and a unique logo.</div>
+                <div class="what">{{work.description}}</div>
             </div>
             <div>
                 <div class="headline_ping_3">Categories</div>
