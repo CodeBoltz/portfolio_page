@@ -381,7 +381,6 @@ nav a:hover {
 }
 
 .line {
-  /* Line 1 */
   position: absolute;
   width: 660px;
   height: 0px;
@@ -391,7 +390,6 @@ nav a:hover {
 }
 
 .line2 {
-  /* Line 2 */
   position: absolute;
   width: 720px;
   height: 0px;
