@@ -1,8 +1,8 @@
+import os
 from flask import render_template, url_for, flash, redirect, request
 from portfoliopage import app, db
 from portfoliopage.forms import DesignForm
 from portfoliopage.models import Work
-import os
 
 # routes for main page
 @app.route('/')
@@ -59,7 +59,7 @@ def work_template():
 
 @app.route('/work_template')
 def detail():
-    work = Work.query.all()
+    work = Work.query.filter_by(id='2')
     return render_template('work_template.html', work=work)
 
 
