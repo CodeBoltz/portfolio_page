@@ -46,7 +46,7 @@ def submit():
         db.session.add(work)
         db.session.commit()
         flash(f'Your design work has been submited!', 'success')
-        return redirect(url_for('index'))
+        return redirect(url_for('work'))
     return render_template('submit.html', title='Submit Design', form=form)
 
 #route for test work page template
@@ -56,11 +56,11 @@ def work_template():
     data = Work.query
     return render_template('work_template.html', data=list, image=image)
 '''
-#route for all work pages 
 
-@app.route('/work_template')
-def detail():
-    work = Work.query.filter_all()
-    return render_template('work_template.html', work=work)
+#route for all work pages 
+@app.route('/work/<string:work_id>')
+def post(work_id):
+    work = Work.query.get_or_404(work_id)
+    return render_template('post.html', title=work.title, work=work)
 
 
