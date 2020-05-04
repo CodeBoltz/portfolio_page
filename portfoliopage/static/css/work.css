@@ -58,6 +58,7 @@
     top: 604px;
     background: rgba(234, 234, 234, 0.7);
     border-radius: 25px;
+    object-fit: cover;
   }
   
   .work_box3 {
@@ -68,6 +69,7 @@
     top: 604px;
     background: rgba(234, 234, 234, 0.7);
     border-radius: 25px;
+    object-fit: cover;
   }
   
   .work_box4 {
@@ -78,6 +80,7 @@
     top: 898px;
     background: rgba(234, 234, 234, 0.7);
     border-radius: 25px;
+    object-fit: cover;
   }
   
   .work_box5 {
@@ -88,6 +91,7 @@
     top: 898px;
     background: rgba(234, 234, 234, 0.7);
     border-radius: 25px;
+    object-fit: cover;
   }
   
   .work_box6 {
@@ -98,6 +102,7 @@
     top: 898px;
     background: rgba(234, 234, 234, 0.7);
     border-radius: 25px;
+    object-fit: cover;
   }
   
   .work_box7 {
@@ -108,6 +113,7 @@
     top: 1192px;
     background: rgba(234, 234, 234, 0.7);
     border-radius: 25px;
+    object-fit: cover;
   }
   
   .work_box8 {
@@ -118,6 +124,7 @@
     top: 1192px;
     background: rgba(234, 234, 234, 0.7);
     border-radius: 25px;
+    object-fit: cover;
   }
   
   .work_box9 {
@@ -128,6 +135,7 @@
     top: 1192px;
     background: rgba(234, 234, 234, 0.7);
     border-radius: 25px;
+    object-fit: cover;
   }
   
   .work_box10 {
@@ -138,6 +146,7 @@
     top: 1486px;
     background: rgba(234, 234, 234, 0.7);
     border-radius: 25px;
+    object-fit: cover;
   }
   
   .work_box11 {
@@ -148,6 +157,7 @@
     top: 1486px;
     background: rgba(234, 234, 234, 0.7);
     border-radius: 25px;
+    object-fit: cover;
   }
   
   .work_box12 {
@@ -158,6 +168,7 @@
     top: 1486px;
     background: rgba(234, 234, 234, 0.7);
     border-radius: 25px;
+    object-fit: cover;
   }
   
   /* here starts css footer of work page */

@@ -16,7 +16,8 @@ def profile():
 
 @app.route('/work')
 def work():
-    return render_template('work.html', title="Work")
+    work = Work.query.all()
+    return render_template('work.html', title="Work", work=work)
 
 @app.route('/ping_work')
 def ping_work():
@@ -59,7 +60,7 @@ def work_template():
 
 @app.route('/work_template')
 def detail():
-    work = Work.query.filter_by(id='2')
+    work = Work.query.filter_all()
     return render_template('work_template.html', work=work)
 
 

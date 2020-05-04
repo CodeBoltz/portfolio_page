@@ -3,55 +3,61 @@
     <link rel="stylesheet" href="{{ url_for('static', filename='css/work.css') }}">
 {% endblock %}
 {% block content %}
-  <div name="headline">
-    <div>
-      <div class="headline">All of my design work</div>
-    </div>
-    <div>
-      <div class="headline_line"></div>
-    </div>
-    <div>
-      <div class="subline_work">Check out all of my creations. It varies from university project, to personal projects or company projects. More sample text will follow here and will be added later.</div>
-    </div>
-  </div>
-  <div name="designs">
-    <div>
-      <a href="work_template">
-        <img src="/static/images/Ping_2.jpg" class="work_box1">
-      </a>
-    </div>
-    <div>
-      <div class="work_box2"></div>
-    </div>
-    <div>
-      <div class="work_box3"></div>
-    </div>
-    <div>
-      <div class="work_box4"></div>
-    </div>
-    <div>
-      <div class="work_box5"></div>
-    </div>
-    <div>
-      <div class="work_box6"></div>
-    </div>
-    <div>
-      <div class="work_box7"></div>
-    </div>
-    <div>
-      <div class="work_box8"></div>
-    </div>
-    <div>
-      <div class="work_box9"></div>
-    </div>
-    <div>
-      <div class="work_box10"></div>
-    </div>
-    <div>
-      <div class="work_box11"></div>
-    </div>
-    <div>
-      <div class="work_box12"></div>
-    </div>
-  </div>
+  {% for work in work %}  
+      <div name="headline">
+        <div>
+          <div class="headline">All of my design work</div>
+        </div>
+        <div>
+          <div class="headline_line"></div>
+        </div>
+        <div>
+          <div class="subline_work">Check out all of my creations. It varies from university project, to personal projects or company projects. More sample text will follow here and will be added later.</div>
+        </div>
+      </div>
+      <div name="designs">
+        <div>
+          <a href="">
+            <img src="/static/uploads/{{work.image}}" class="work_box1">
+          </a>
+        </div>
+        <div>
+          <a href="{{ url_for('work', work_id=work.id) }}">
+            <img src="/static/uploads/{{work.image}}" class="work_box2">
+          </a>
+        </div>
+        <div>
+          <a href="{{ url_for('work', work_id=work.id) }}">
+            <img src="/static/uploads/{{work.image}}" class="work_box3">
+          </a>
+        </div>
+        <div>
+          <div class="work_box4"></div>
+        </div>
+        <div>
+          <div class="work_box5"></div>
+        </div>
+        <div>
+          <div class="work_box6"></div>
+        </div>
+        <div>
+          <div class="work_box7"></div>
+        </div>
+        <div>
+          <div class="work_box8"></div>
+        </div>
+        <div>
+          <div class="work_box9"></div>
+        </div>
+        <div>
+          <div class="work_box10"></div>
+        </div>
+        <div>
+          <div class="work_box11"></div>
+        </div>
+        <div>
+          <div class="work_box12"></div>
+        </div>
+      </div>
+  {% endfor %}
 {% endblock %}
