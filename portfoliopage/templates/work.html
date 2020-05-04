@@ -21,14 +21,11 @@
             <img src="{{ url_for('static', filename='uploads/' + work.image) }}" class="work_box1">
           </a>
         </div>
-        <div>
-          <a href="{{ url_for('post', work_id=work.id) }}">
-            <img src="{{ url_for('static', filename='uploads/' + work.image) }}" class="work_box2">
-          </a>
+        <div class="work_box2">
         </div>
         <div>
           <a href="{{ url_for('post', work_id=work.id) }}">
-            <img src="/static/uploads/{{work.image2}}" class="work_box3">
+            <img src="/static/uploads/{{work.image3}}" class="work_box3">
           </a>
         </div>
         <div>
