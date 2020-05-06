@@ -41,7 +41,7 @@
   }
   
   .work_box1 {
-    position: absolute;
+    position: relative;
     width: 574px;
     height: 264px;
     left: 57px;

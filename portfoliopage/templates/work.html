@@ -15,20 +15,15 @@
         </div>
       </div>
       <div name="designs">
-        {% for work in work %}  
-        <div>
-          <a href="{{ url_for('post', work_id=work.id) }}">
-            <img src="{{ url_for('static', filename='uploads/' + work.image) }}" class="work_box1">
-          </a>
-        </div>
-        <div>
-          <a href="{{ url_for('post', work_id=work.id) }}">
-            <img src="{{ url_for('static', filename='uploads/' + work.image) }}" class="work_box2">
-          </a>
-        </div>
-        <div class="work_box3">
-          </a>
-        </div>
+        {% for w in work %}  
+          <div>
+            <a href="{{ url_for('post', work_id=w.id) }}">
+              <img src="{{ url_for('static', filename='uploads/' + w.image) }}" class="work_box1">
+            </a>
+          </div>
+          <div class="work_box3">
+            </a>
+          </div>
         {% endfor %}
         <!--
         <div>
