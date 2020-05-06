@@ -63,4 +63,29 @@ def post(work_id):
     work = Work.query.get_or_404(work_id)
     return render_template('post.html', title=work.title, work=work)
 
+#route to update post
+@app.route('/work/<string:work_id>/update', methods=['GET', 'POST'])
+def update_post(work_id):
+    work = Work.query.get_or_404(work_id)
+    form = DesignForm()
+    if form.validate_on_submit():
+        work.title = form.title.data
+        work.date = form.date.data
+        work.description = form.description.data
+        work.image = form.image.data
+        work.image2 = form.image2.data
+        work.image3 = form.image3.data
+        work.link = form.link.data
+        db.session.commit()
+        flash('Your post has been updated!', 'success')
+        return redirect(url_for('work', work_id=work.id))
+    elif request.method == 'GET':
+        form.title.data = work.title 
+        form.date.data = work.date
+        form.description.data = work.description 
+        form.image.data = work.image 
+        form.image2.data = work.image2 
+        form.image3.data = work.image3  
+        form.link.data = work.link  
+    return render_template('submit.html', title='Update Post', form=form)
 

@@ -7,8 +7,8 @@ class Work(db.Model):
     date = db.Column(db.String(200), nullable=False)
     description = db.Column(db.Text, nullable=False)
     image = db.Column(db.String(20), nullable=False, default='default.jp')
-    image2 = db.Column(db.String(20))
-    image3 = db.Column(db.String(20))
+    image2 = db.Column(db.String(20), nullable=False)
+    image3 = db.Column(db.String(20), nullable=False)
     link = db.Column(db.String(200), nullable=False)
 
 
