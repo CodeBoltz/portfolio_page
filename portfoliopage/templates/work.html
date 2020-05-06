@@ -3,7 +3,6 @@
     <link rel="stylesheet" href="{{ url_for('static', filename='css/work.css') }}">
 {% endblock %}
 {% block content %}
-  {% for work in work %}  
       <div name="headline">
         <div>
           <div class="headline">All of my design work</div>
@@ -16,18 +15,19 @@
         </div>
       </div>
       <div name="designs">
+        {% for work in work %}  
         <div>
           <a href="{{ url_for('post', work_id=work.id) }}">
             <img src="{{ url_for('static', filename='uploads/' + work.image) }}" class="work_box1">
           </a>
         </div>
-        <div class="work_box2">
+         <div class="work_box2">
         </div>
-        <div>
-          <a href="{{ url_for('post', work_id=work.id) }}">
-            <img src="/static/uploads/{{work.image3}}" class="work_box3">
+        <div class="work_box3">
           </a>
         </div>
+        {% endfor %}
+        <!--
         <div>
           <div class="work_box4"></div>
         </div>
@@ -55,6 +55,6 @@
         <div>
           <div class="work_box12"></div>
         </div>
-      </div>
-  {% endfor %}
+      </div> -->
+  
 {% endblock %}
