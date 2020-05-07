@@ -1,28 +1,28 @@
 {% extends "layout.html" %}
 {% block head %}
     <link rel="stylesheet" href="{{ url_for('static', filename='css/post.css') }}">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 {% endblock %}
 {% block content %}
         <div name="headline">
             <div class="headline_ping_work">{{work.title}}</div>
             <div class="ping_work_line1"></div>
         </div>
-        <!-- insert admin if statement -->
+        <!-- admin if statement -->
         <div name="admit features">
             {% if current_user.is_authenticated %}
                 <div>
-                    <a href="#"> 
-                        <img src="/static/images/delet_icon.svg" alt="delete icon" class="delete">
+                    <a href="{{ url_for('delete_post', work_id=work.id) }}" method="POST" >
+                        <img src="/static/images/delet_icon.svg" alt="delete icon" class="delete">  
                     </a>
                 </div>
                 <div>
-                    <a href="{{ url_for('update_post') }}"> 
+                    <a href="{{ url_for('update_post', work_id=work.id) }}">
                         <img src="/static/images/edit_icon.svg" alt="edit icon" class="edit">
                     </a>
                 </div>
                 {% else %}
             {% endif%}
-        </div>
         <div name="images">
             <div>
                 <img src="/static/uploads/{{work.image}}" alt="Image of project Ping" class="image_ping1">

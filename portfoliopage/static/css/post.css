@@ -58,16 +58,16 @@
   
   .edit {
     position: absolute;
-    width: 57px;
-    height: 57px;
+    width: 40px;
+    height: 40px;
     left: 1773.7px;
     top: 198px;
   }
 
   .delete {
     position: absolute;
-    width: 57px;
-    height: 57px;
+    width: 40px;
+    height: 40px;
     left: 1773.7px;
     top: 285px;
   }
