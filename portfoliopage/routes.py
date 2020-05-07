@@ -130,7 +130,7 @@ def update_post(work_id):
     return render_template('submit.html', title='Update Post', form=form, work=work, legend='Update Post')
 
 #route to delte post
-@app.route('/work/<string:work_id>/delete', methods=['POST'])
+@app.route('/work/<string:work_id>/delete', methods=['POST', 'GET'])
 @login_required
 def delete_post(work_id):
     work = Work.query.get_or_404(work_id)
