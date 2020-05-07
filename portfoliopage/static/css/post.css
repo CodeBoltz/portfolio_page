@@ -56,6 +56,21 @@
     object-fit: cover;
   }
   
+  .edit {
+    position: absolute;
+    width: 57px;
+    height: 57px;
+    left: 1773.7px;
+    top: 198px;
+  }
+
+  .delete {
+    position: absolute;
+    width: 57px;
+    height: 57px;
+    left: 1773.7px;
+    top: 285px;
+  }
 
   .headline_ping_1 {
     position: absolute;

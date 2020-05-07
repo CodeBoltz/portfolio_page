@@ -48,6 +48,7 @@
     top: 604px;
     border-radius: 25px;
     object-fit: cover;
+    margin: 1em;
   }
   
   .work_box2 {

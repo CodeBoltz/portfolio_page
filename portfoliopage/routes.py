@@ -55,14 +55,6 @@ def submit():
         return redirect(url_for('work'))
     return render_template('submit.html', title='Submit Design', form=form)
 
-#route for test work page template
-'''
-@app.route('/work_template')
-def work_template():
-    data = Work.query
-    return render_template('work_template.html', data=list, image=image)
-'''
-
 #route for all work pages 
 @app.route('/work/<string:work_id>')
 def post(work_id):
@@ -93,5 +85,5 @@ def update_post(work_id):
         form.image2.data = work.image2 
         form.image3.data = work.image3  
         form.link.data = work.link  
-    return render_template('submit.html', title='Update Post', form=form)
+    return render_template('submit.html', title='Update Post', form=form, work=work)
 

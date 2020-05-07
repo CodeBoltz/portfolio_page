@@ -3,41 +3,54 @@
     <link rel="stylesheet" href="{{ url_for('static', filename='css/post.css') }}">
 {% endblock %}
 {% block content %}
-    <div name="headline">
-        <div class="headline_ping_work">{{work.title}}</div>
-        <div class="ping_work_line1"></div>
-    </div>
-    <div name="images">
-        <div>
-            <img src="/static/uploads/{{work.image}}" alt="Image of project Ping" class="image_ping1">
+        <div name="headline">
+            <div class="headline_ping_work">{{work.title}}</div>
+            <div class="ping_work_line1"></div>
         </div>
-        <div>
-            <img src="/static/uploads/{{work.image2}}" alt="Image of project Ping" class="image_ping2">
+        <!-- insert admin if statement -->
+        <div name="admit features">
+            <div>
+                <a href="#"> 
+                    <img src="/static/images/delet_icon.svg" alt="delete icon" class="delete">
+                </a>
+            </div>
+            <div>
+                <a href="#"> 
+                    <img src="/static/images/edit_icon.svg" alt="edit icon" class="edit">
+                </a>
+            </div>
         </div>
-        <div>
-            <img src="/static/uploads/{{work.image3}}" alt="Image of project Ping" class="image_ping3">
+        <div name="images">
+            <div>
+                <img src="/static/uploads/{{work.image}}" alt="Image of project Ping" class="image_ping1">
+            </div>
+            <div>
+                <img src="/static/uploads/{{work.image2}}" alt="Image of project Ping" class="image_ping2">
+            </div>
+            <div>
+                <img src="/static/uploads/{{work.image3}}" alt="Image of project Ping" class="image_ping3">
+            </div>
         </div>
-    </div>
-    <div name="description">
-        <div>
-            <div class="headline_ping_1">When</div>
-        </div>
-        <div>
-            <div class="when">{{work.date}}</div>
-        </div>
-        <div>
-            <div class="headline_ping_2">What</div>
-        </div>
-        <div>
-            <div class="what">{{work.description}}</div>
-        </div>
-        <div>
-            <div class="headline_ping_3">Find it here</div>
-        </div>
-        <div>
-            <a href="{{work.link}}">
-                <img src="/static/images/dribble_icon.svg" alt="Find it on Dribble" class="ping_dribble">
-            </a>
-        </div>
-    </div>
+        <div name="description">
+            <div>
+                <div class="headline_ping_1">When</div>
+            </div>
+            <div>
+                <div class="when">{{work.date}}</div>
+            </div>
+            <div>
+                <div class="headline_ping_2">What</div>
+            </div>
+            <div>
+                <div class="what">{{work.description}}</div>
+            </div>
+            <div>
+                <div class="headline_ping_3">Find it here</div>
+            </div>
+            <div>
+                <a href="{{work.link}}">
+                    <img src="/static/images/dribble_icon.svg" alt="Find it on Dribble" class="ping_dribble">
+                </a>
+            </div>
+        </div>   
 {% endblock %}
