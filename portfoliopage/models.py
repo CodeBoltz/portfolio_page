@@ -6,7 +6,7 @@ from flask_login import UserMixin
 def load_Admin(admin_id):
     return Admin.query.get(int(admin_id))
 
-class Admin(db.Model):
+class Admin(db.Model, UserMixin):
     id = db.Column(db.Integer, primary_key=True)
     username = db.Column(db.String(20), nullable=False, unique=True)
     password = db.Column(db.String(60), nullable=False, unique=True)
