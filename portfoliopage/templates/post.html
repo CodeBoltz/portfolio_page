@@ -9,16 +9,19 @@
         </div>
         <!-- insert admin if statement -->
         <div name="admit features">
-            <div>
-                <a href="#"> 
-                    <img src="/static/images/delet_icon.svg" alt="delete icon" class="delete">
-                </a>
-            </div>
-            <div>
-                <a href="#"> 
-                    <img src="/static/images/edit_icon.svg" alt="edit icon" class="edit">
-                </a>
-            </div>
+            {% if current_user.is_authenticated %}
+                <div>
+                    <a href="#"> 
+                        <img src="/static/images/delet_icon.svg" alt="delete icon" class="delete">
+                    </a>
+                </div>
+                <div>
+                    <a href="{{ url_for('update_post') }}"> 
+                        <img src="/static/images/edit_icon.svg" alt="edit icon" class="edit">
+                    </a>
+                </div>
+                {% else %}
+            {% endif%}
         </div>
         <div name="images">
             <div>

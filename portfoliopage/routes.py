@@ -28,6 +28,8 @@ def ping_work():
 def contact():
     return render_template('contact.html', title="Contact")
 
+'''
+!!! THIS IS COMMENTED OUT SO NOBODY ELSE CAN REGISTER TO MY PAGE !!!
 # route for registration form
 @app.route("/register", methods=['GET', 'POST'])
 def register():
@@ -41,7 +43,7 @@ def register():
         db.session.commit()
         flash('Your account has been created! You are now able to log in', 'success')
         return redirect(url_for('login'))
-    return render_template('register.html', title='Register', form=form)
+    return render_template('register.html', title='Register', form=form) '''
 
 # route for login form
 @app.route("/login", methods=['GET', 'POST'])
@@ -67,6 +69,7 @@ def logout():
 
 # route for submit form
 @app.route('/submit', methods=['GET', 'POST'])
+@login_required
 def submit():
     form = DesignForm()
     if form.validate_on_submit():
@@ -101,6 +104,7 @@ def post(work_id):
 
 #route to update post
 @app.route('/work/<string:work_id>/update', methods=['GET', 'POST'])
+@login_required
 def update_post(work_id):
     work = Work.query.get_or_404(work_id)
     form = DesignForm()
@@ -123,5 +127,5 @@ def update_post(work_id):
         form.image2.data = work.image2 
         form.image3.data = work.image3  
         form.link.data = work.link  
-    return render_template('submit.html', title='Update Post', form=form, work=work)
+    return render_template('submit.html', title='Update Post', form=form, work=work, legend='Update Post')
 

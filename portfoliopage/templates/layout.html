@@ -28,7 +28,15 @@
     <label for="nav-toggle" class="nav-toggle-label">
       <span></span>
     </label>  
-
+    {% if current_user.is_authenticated %}
+      <a href="{{url_for('logout') }}">
+        <img src="/static/images/logout_icon.svg" class="logout">
+      </a>
+      <a href="{{url_for('submit') }}">
+        <img src="/static/images/submit_icon.svg" class="submit">
+      </a>
+    {% else %}
+    {% endif%}
     {% if title %}
         <title>Gregor Boltz - {{ title }}</title>
     {% else %}

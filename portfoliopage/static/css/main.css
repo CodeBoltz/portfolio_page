@@ -306,6 +306,22 @@ nav a:hover {
     margin: 60px; 
   }
 
+  .submit {
+    position: absolute;
+    top: 40px;
+    left: 1770px;
+    width: 40px;
+    height: 40px;
+  }
+
+  .logout {
+    position: absolute;
+    top: 40px;
+    left: 1830px;
+    width: 40px;
+    height: 40px;
+  }
+
   nav {
     all: unset;
     position: absolute;
