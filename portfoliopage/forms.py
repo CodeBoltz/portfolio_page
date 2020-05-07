@@ -1,7 +1,8 @@
 from flask_wtf import FlaskForm
-from wtforms import StringField, SubmitField
+from wtforms import StringField, SubmitField, BooleanField, PasswordField
 from flask_wtf.file import FileField, FileRequired
-from wtforms.validators import DataRequired, Length
+from wtforms.validators import DataRequired, Length, EqualTo, ValidationError
+from portfoliopage.models import Admin
 
 class DesignForm(FlaskForm):
     title = StringField('Title', validators=[DataRequired(), Length(min=2, max=200)])
@@ -13,3 +14,14 @@ class DesignForm(FlaskForm):
     link = StringField('Social Link', validators=[DataRequired(), Length(min=2, max=2000)])
     submit = SubmitField('Upload')
     
+class LoginForm(FlaskForm):
+    username = StringField('Username',validators=[DataRequired()])
+    password = PasswordField('Password', validators=[DataRequired()])
+    remember = BooleanField('Remember Me')
+    submit = SubmitField('Login')
+
+class RegistrationForm(FlaskForm):
+    username = StringField('Username', validators=[DataRequired(), Length(min=2, max=20)])
+    password = PasswordField('Password', validators=[DataRequired()])
+    confirm_password = PasswordField('Confirm Password', validators=[DataRequired(), EqualTo('password')])
+    submit = SubmitField('Sign Up')

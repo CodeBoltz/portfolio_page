@@ -3,6 +3,7 @@ List of packages used:
     - Flask
     - Flask wtforms
     - Flask Uploads
+    - FLask Login
     - SQLalchemy
     - SQLAlchemy-ImageAttach
     - bcrypt

@@ -1,11 +1,13 @@
 import os
 from flask import render_template, url_for, flash, redirect, request
-from portfoliopage import app, db
-from portfoliopage.forms import DesignForm
-from portfoliopage.models import Work
+from portfoliopage import app, db, bcrypt
+from portfoliopage.forms import DesignForm, LoginForm, RegistrationForm
+from portfoliopage.models import Work, Admin
+from flask_login import login_user, current_user, logout_user, login_required
 
 # routes for main page
 @app.route('/')
+@app.route("/home")
 def index():
     return render_template('index.html', title="Home")
 
@@ -27,7 +29,39 @@ def ping_work():
 def contact():
     return render_template('contact.html', title="Contact")
 
-# route for forms
+# route for registration form
+@app.route("/register", methods=['GET', 'POST'])
+def register():
+    if current_user.is_authenticated:
+        return redirect(url_for('home'))
+    form = RegistrationForm()
+    if form.validate_on_submit():
+        hashed_password = bcrypt.generate_password_hash(form.password.data).decode('utf-8')
+        admin = Admin(username=form.username.data, password=hashed_password)
+        db.session.add(admin)
+        db.session.commit()
+        flash('Your account has been created! You are now able to log in', 'success')
+        return redirect(url_for('login'))
+    return render_template('register.html', title='Register', form=form)
+
+# route for login form
+@app.route("/login", methods=['GET', 'POST'])
+def login():
+    if current_user.is_authenticated:
+        return redirect(url_for('home'))
+    form = LoginForm()
+    if form.validate_on_submit():
+        admin = Admin.query.filter_by(username=form.username.data).first()
+        if admin and bcrypt.check_password_hash(admin.password, form.password.data):
+            login_user(admin, remember=form.remember.data)
+            next_page = request.args.get('next')
+            return redirect(next_page) if next_page else redirect(url_for('home'))
+        else:
+            flash('Login Unsuccessful. Please check email and password', 'danger')
+    return render_template('login.html', title='Login', form=form)
+
+
+# route for submit form
 @app.route('/submit', methods=['GET', 'POST'])
 def submit():
     form = DesignForm()
