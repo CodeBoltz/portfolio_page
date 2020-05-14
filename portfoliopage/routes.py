@@ -1,6 +1,6 @@
 import os
 from flask import render_template, url_for, flash, redirect, request
-from portfoliopage import app, db, bcrypt
+from portfoliopage import app, db, bcrypt, mail
 from portfoliopage.forms import DesignForm, LoginForm, RegistrationForm, EmailForm
 from portfoliopage.models import Work, Admin
 from flask_login import login_user, current_user, logout_user, login_required
@@ -140,8 +140,16 @@ def delete_post(work_id):
     flash('Your post has been deleted!', 'success')
     return redirect(url_for('work'))
 
+#function for email send out
+def send_email():
+    msg = Message('Test email', recipients='boltz.gregor@gmail.com')
+    mail.send(msg)
+
 #route for email
 @app.route('/contact/email', methods=['GET', 'POST'])
 def send_email():
     form = EmailForm()
+    if form.validate_on_submit():
+        send_email()
+        flash('Your email has been sent!', 'info')
     return render_template('email.html', title='Send Email', form=form)
