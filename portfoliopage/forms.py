@@ -1,13 +1,13 @@
 from flask_wtf import FlaskForm
-from wtforms import StringField, SubmitField, BooleanField, PasswordField
+from wtforms import StringField, SubmitField, BooleanField, PasswordField, TextAreaField
 from flask_wtf.file import FileField, FileRequired
-from wtforms.validators import DataRequired, Length, EqualTo, ValidationError
+from wtforms.validators import DataRequired, Length, EqualTo, ValidationError, Email
 from portfoliopage.models import Admin
 
 class DesignForm(FlaskForm):
     title = StringField('Title', validators=[DataRequired(), Length(min=2, max=200)])
     date = StringField('Date', validators=[DataRequired(), Length(min=2, max=200)])
-    description = StringField('Description', validators=[DataRequired(), Length(min=2, max=1200)])
+    description = TextAreaField('Description', validators=[DataRequired(), Length(min=2, max=1200)])
     image = FileField('First Image', validators=[DataRequired()])
     image2 = FileField('Second Image', validators=[])
     image3 = FileField('Third Image', validators=[])
@@ -25,3 +25,9 @@ class RegistrationForm(FlaskForm):
     password = PasswordField('Password', validators=[DataRequired()])
     confirm_password = PasswordField('Confirm Password', validators=[DataRequired(), EqualTo('password')])
     submit = SubmitField('Sign Up')
+
+class EmailForm(FlaskForm):
+    email = StringField('Email', validators=[DataRequired(), Email()] )
+    subject  = StringField('Subject', validators=[DataRequired(), Length(min=2, max=200)])
+    message = TextAreaField('Message', validators=[DataRequired(), Length(min=2, max=2000)])
+    submit = SubmitField('Send email')

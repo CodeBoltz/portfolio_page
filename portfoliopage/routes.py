@@ -1,9 +1,10 @@
 import os
 from flask import render_template, url_for, flash, redirect, request
 from portfoliopage import app, db, bcrypt
-from portfoliopage.forms import DesignForm, LoginForm, RegistrationForm
+from portfoliopage.forms import DesignForm, LoginForm, RegistrationForm, EmailForm
 from portfoliopage.models import Work, Admin
 from flask_login import login_user, current_user, logout_user, login_required
+from flask_mail import Message
 
 # routes for main page
 @app.route('/')
@@ -138,3 +139,9 @@ def delete_post(work_id):
     db.session.commit()
     flash('Your post has been deleted!', 'success')
     return redirect(url_for('work'))
+
+#route for email
+@app.route('/contact/email', methods=['GET', 'POST'])
+def send_email():
+    form = EmailForm()
+    return render_template('email.html', title='Send Email', form=form)
