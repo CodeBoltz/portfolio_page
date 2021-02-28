@@ -1,4 +1,4 @@
-from portfoliopage import db, login_manager
+from __init__ import db, login_manager
 from sqlalchemy import ForeignKey
 from flask_login import UserMixin
 

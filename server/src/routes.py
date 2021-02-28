@@ -1,8 +1,8 @@
 import os
 from flask import render_template, url_for, flash, redirect, request
-from portfoliopage import app, db, bcrypt, mail
-from portfoliopage.forms import DesignForm, LoginForm, RegistrationForm, EmailForm
-from portfoliopage.models import Work, Admin
+from __init__ import app, db, bcrypt, mail
+from forms import DesignForm, LoginForm, RegistrationForm, EmailForm
+from models import Work, Admin
 from flask_login import login_user, current_user, logout_user, login_required
 from flask_mail import Message
 
