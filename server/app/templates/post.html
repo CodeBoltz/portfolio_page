@@ -12,25 +12,25 @@
             {% if current_user.is_authenticated %}
                 <div>
                     <a href="{{ url_for('delete_post', work_id=work.id) }}" method="POST" >
-                        <img src="/static/images/delet_icon.svg" alt="delete icon" class="delete">  
+                        <img src="../../static/images/delet_icon.svg" alt="delete icon" class="delete">  
                     </a>
                 </div>
                 <div>
                     <a href="{{ url_for('update_post', work_id=work.id) }}">
-                        <img src="/static/images/edit_icon.svg" alt="edit icon" class="edit">
+                        <img src="../../static/images/edit_icon.svg" alt="edit icon" class="edit">
                     </a>
                 </div>
                 {% else %}
             {% endif%}
         <div name="images">
             <div>
-                <img src="/static/uploads/{{work.image}}" alt="Image of project Ping" class="image_ping1">
+                <img src="../../static/uploads/{{work.image}}" alt="Image of project Ping" class="image_ping1">
             </div>
             <div>
-                <img src="/static/uploads/{{work.image2}}" alt="Image of project Ping" class="image_ping2">
+                <img src="../../static/uploads/{{work.image2}}" alt="Image of project Ping" class="image_ping2">
             </div>
             <div>
-                <img src="/static/uploads/{{work.image3}}" alt="Image of project Ping" class="image_ping3">
+                <img src="../../static/uploads/{{work.image3}}" alt="Image of project Ping" class="image_ping3">
             </div>
         </div>
         <div name="description">
@@ -51,7 +51,7 @@
             </div>
             <div>
                 <a href="{{work.link}}">
-                    <img src="/static/images/dribble_icon.svg" alt="Find it on Dribble" class="ping_dribble">
+                    <img src="../../static/images/dribble_icon.svg" alt="Find it on Dribble" class="ping_dribble">
                 </a>
             </div>
         </div>   

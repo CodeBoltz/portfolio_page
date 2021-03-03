@@ -4,7 +4,7 @@
     "indexes": "firestore.indexes.json"
   },
   "hosting": {
-    "public": "static",
+    "public": "server",
     "ignore": [
       "firebase.json",
       "**/.*",
@@ -13,7 +13,8 @@
     "rewrites": [{
       "source": "**",
       "run": {
-        "serviceId": "flask-fire"
+        "serviceId": "portfolio-website-23683",
+        "region": "europe-west3" 
       }
     }
     ]

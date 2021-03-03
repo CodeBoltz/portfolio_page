@@ -1,8 +1,8 @@
 import os
 from flask import render_template, url_for, flash, redirect, request
-from __init__ import app, db, bcrypt, mail
-from forms import DesignForm, LoginForm, RegistrationForm, EmailForm
-from models import Work, Admin
+from app import app, db, bcrypt, mail
+from app import forms
+from app import models
 from flask_login import login_user, current_user, logout_user, login_required
 from flask_mail import Message
 

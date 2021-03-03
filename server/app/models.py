@@ -1,4 +1,4 @@
-from __init__ import db, login_manager
+from app import db, login_manager
 from sqlalchemy import ForeignKey
 from flask_login import UserMixin
 

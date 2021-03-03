@@ -2,7 +2,7 @@ from flask_wtf import FlaskForm
 from wtforms import StringField, SubmitField, BooleanField, PasswordField, TextAreaField
 from flask_wtf.file import FileField, FileRequired
 from wtforms.validators import DataRequired, Length, EqualTo, ValidationError, Email
-from models import Admin
+from app import models
 
 class DesignForm(FlaskForm):
     title = StringField('Title', validators=[DataRequired(), Length(min=2, max=200)])
